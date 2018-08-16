@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/DevScene - Ose.unity
+    guid: 8579b27a0e944c643bbbb57d70de27fe
+  - enabled: 1
+    path: Assets/Scenes/Room2.unity
+    guid: 20fa0ca1f17b6ea41a65f7ea1e9c72d0
   m_configObjects: {}
