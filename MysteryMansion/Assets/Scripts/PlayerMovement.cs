@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.Find("Player").GetComponent<Rigidbody>();
+        //player = GameObject.Find("Player").GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
