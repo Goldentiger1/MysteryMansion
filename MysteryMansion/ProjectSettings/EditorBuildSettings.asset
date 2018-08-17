@@ -5,13 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/DevScene - Ose.unity
-    guid: 8579b27a0e944c643bbbb57d70de27fe
-  - enabled: 1
-    path: Assets/Scenes/Room2.unity
-    guid: 20fa0ca1f17b6ea41a65f7ea1e9c72d0
+    path: Assets/Scenes/DevScene - Aaro.unity
+    guid: d4119b8e40b06644c8d0acb0b47973a4
   m_configObjects: {}
