@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Interactions : MonoBehaviour {
     public LayerMask itemLM;
     public Text dbText; // Debug purpose
+    Inventory item;
 
     void Update() {
         /*
@@ -26,14 +27,19 @@ public class Interactions : MonoBehaviour {
             if (Input.touchCount > 0) {
             foreach (Touch finger in Input.touches) {
                 // Kun sormi on näytöllä
-                if (Input.GetTouch(finger.fingerId).phase == TouchPhase.Began) {
-
+                if (Input.GetTouch(finger.fingerId).phase == TouchPhase.Began) {                    
                     Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(finger.fingerId).position);
                     RaycastHit hit;
                     // Osuiko raycast johonkin?
                     if (Physics.Raycast(ray, out hit, Mathf.Infinity, itemLM)) {
                         //hit.collider.gameObject.SetActive(false);
-                        dbText.text = Input.touchCount.ToString();//debug purpose                                            
+                        Pickup(item.pickupItem, hit);
+                        if (item.pickupItem == null) {
+                            dbText.text = 0.ToString();//debug purpose
+                        } else {
+                            dbText.text = 1.ToString();
+                        }
+                        
                     }
                 }
             }
@@ -41,7 +47,7 @@ public class Interactions : MonoBehaviour {
     }
 
 
-    public void Pickup() {
-
+    public void Pickup(GameObject item, RaycastHit hit) {
+        item = hit.transform.gameObject;
     }
 }
