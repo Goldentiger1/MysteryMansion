@@ -8,9 +8,9 @@ public class roomSwap : MonoBehaviour {
 
     public NavMeshAgent playerNav;
 
-    public Vector3 destination;
+    public Transform destination;
 
-
+    
 	// Use this for initialization
 	void Start () {
         playerNav = GameObject.Find("Player").GetComponent<NavMeshAgent>();
@@ -23,8 +23,9 @@ public class roomSwap : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.layer == LayerMask.NameToLayer("Player")) {
-            playerNav.nextPosition = destination;
+                playerNav.Warp(destination.position);
+            }
         }
     }
 
-}
+
