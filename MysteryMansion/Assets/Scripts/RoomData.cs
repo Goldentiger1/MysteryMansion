@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class RoomData : MonoBehaviour {
 
-    public Rigidbody player;
+    public Sprite roomSprite;
 
-    
+    public Transform cameraPosition;
 
-
-        
+    public float FOV;
 
 	// Use this for initialization
 	void Start () {
-        //player = GameObject.Find("Player").GetComponent<Rigidbody>();
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//if (Input.GetKeyDown)
-
+		
 	}
 }
