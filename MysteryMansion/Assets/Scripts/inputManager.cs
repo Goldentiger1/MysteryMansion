@@ -10,7 +10,7 @@ public class inputManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        player = GameObject.Find("ProtoPlayer").GetComponent<NavMeshAgent>();
+        player = GameObject.Find("Protoplayer").GetComponent<NavMeshAgent>();
 	}
 	
 	// Update is called once per frame

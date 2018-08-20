@@ -10,10 +10,17 @@ public class roomSwap : MonoBehaviour {
 
     public Transform destination;
 
-    
-	// Use this for initialization
-	void Start () {
-        playerNav = GameObject.Find("Player").GetComponent<NavMeshAgent>();
+    public Camera mainCam;
+    public Camera bgCam;
+    public Camera nextMainCam;
+    public Camera nextBgCam;
+
+    //public List<Camera> cameras;
+
+
+    // Use this for initialization
+    void Start () {
+        playerNav = GameObject.Find("Protoplayer").GetComponent<NavMeshAgent>();
 
 	}
 	
@@ -24,6 +31,11 @@ public class roomSwap : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.layer == LayerMask.NameToLayer("Player")) {
                 playerNav.Warp(destination.position);
+            mainCam.enabled = false;
+            bgCam.enabled = false;
+            nextMainCam.enabled = true;
+            nextBgCam.enabled = true;
+            //var camOff = Scene.FindObjectOfType<Camera>().enabled = false;
             }
         }
     }
