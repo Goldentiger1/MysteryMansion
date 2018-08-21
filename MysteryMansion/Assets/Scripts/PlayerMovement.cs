@@ -6,17 +6,22 @@ public class PlayerMovement : MonoBehaviour {
 
     public Rigidbody player;
 
-    
+    public LayerMask rooms;
 
+    RoomData room;
 
-        
+    public void Awake() {
+        rooms = 1 << LayerMask.NameToLayer("Rooms");
+    }
 
-	// Use this for initialization
-	void Start () {
+    void Start () {
         //player = GameObject.Find("Player").GetComponent<Rigidbody>();
+        var r = Physics.OverlapSphere(transform.position, 1f, rooms);
+        room = r[0].GetComponent<RoomData>();
+        room.EnterRoom();
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
 		//if (Input.GetKeyDown)
 

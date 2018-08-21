@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class RoomData : MonoBehaviour {
 
-    public Sprite roomSprite;
+    public Camera[] cameras;
 
-    public Transform cameraPosition;
+    public void Awake() {
+        cameras = GetComponentsInChildren<Camera>();
+    foreach (var cam in cameras) {
+            cam.enabled = false;
+        }
+    }
 
-    public float FOV;
+    public void EnterRoom() {
+        print("entered " + gameObject.name);
+    foreach (var cam in cameras) {
+            cam.enabled = true;
+        }
+    }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public void ExitRoom() {
+        foreach (var cam in cameras) {
+            cam.enabled = false;
+        }
+    }
+
 }
