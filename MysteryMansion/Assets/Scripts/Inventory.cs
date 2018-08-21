@@ -17,9 +17,9 @@ public class Inventory : MonoBehaviour {
     void Update() {
         ItemsList.Add(pickupItem);
         pickupItem = null;
-        foreach(GameObject item in ItemsList) {
+        //foreach(GameObject item in ItemsList) {
 
-        }
+        //}
     }
 }
 
