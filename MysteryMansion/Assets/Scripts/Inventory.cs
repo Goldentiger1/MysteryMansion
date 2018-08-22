@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
-    public GameObject pickupItem;
     public int ListSize;
     public List<GameObject> ItemsList = new List<GameObject>();
     public List<Button> InventoryList = new List<Button>();
@@ -15,11 +14,15 @@ public class Inventory : MonoBehaviour {
     }
 
     void Update() {
-        ItemsList.Add(pickupItem);
-        pickupItem = null;
-        //foreach(GameObject item in ItemsList) {
-
-        //}
     }
+
+
+
+    public void Pickup(GameObject pickupItem) {
+        if(pickupItem != null) {
+            ItemsList.Add(pickupItem);
+        }
+    }
+
 }
 

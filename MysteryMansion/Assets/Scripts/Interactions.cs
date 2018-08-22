@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Interactions : MonoBehaviour {
     public LayerMask itemLM;
     public Text dbText; // Debug purpose
-    Inventory item;
 
     void Update() {
         /*
@@ -44,10 +43,5 @@ public class Interactions : MonoBehaviour {
                 }
             }
         }
-    }
-
-
-    public void Pickup(GameObject item, RaycastHit hit) {
-        item = hit.transform.gameObject;
     }
 }
