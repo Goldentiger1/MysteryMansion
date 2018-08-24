@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Interactions : MonoBehaviour {
     public LayerMask itemLM;
-    public Text dbText; // Debug purpose
+    Inventory pItems;
 
     void Update() {
         /*
@@ -31,14 +31,8 @@ public class Interactions : MonoBehaviour {
                     RaycastHit hit;
                     // Osuiko raycast johonkin?
                     if (Physics.Raycast(ray, out hit, Mathf.Infinity, itemLM)) {
-                        //hit.collider.gameObject.SetActive(false);
-                        Pickup(item.pickupItem, hit);
-                        if (item.pickupItem == null) {
-                            dbText.text = 0.ToString();//debug purpose
-                        } else {
-                            dbText.text = 1.ToString();
-                        }
-                        
+                        hit.collider.gameObject.SetActive(false);
+                        pItems.Pickup(hit.transform.gameObject);                        
                     }
                 }
             }
