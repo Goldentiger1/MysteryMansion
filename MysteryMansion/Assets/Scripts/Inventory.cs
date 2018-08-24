@@ -16,11 +16,11 @@ public class Inventory : MonoBehaviour {
     void Update() {
     }
 
-
-
-    public void Pickup(GameObject pickupItem) {
-        if(pickupItem != null) {
-            ItemsList.Add(pickupItem);
+    public void Pickup(GameObject item) {
+        for (int i = 0; i < ListSize;) {
+            if(item != null) {
+                ItemsList[i].
+            }
         }
     }
 
