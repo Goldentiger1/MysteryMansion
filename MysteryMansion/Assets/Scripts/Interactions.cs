@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Interactions : MonoBehaviour {
     public LayerMask itemLM;
-    Inventory pItems;
+    public Inventory pItems;
 
     void Update() {
         /*
