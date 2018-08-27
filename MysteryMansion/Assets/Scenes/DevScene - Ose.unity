@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 134222596}
   - component: {fileID: 134222595}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: TakeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,8 +705,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180.5, y: -0.00012207031}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 75.5, y: 0}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &134222595
 MonoBehaviour:
@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 161774378}
   - component: {fileID: 161774377}
   m_Layer: 5
-  m_Name: Button
+  m_Name: UseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -817,8 +817,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -182.6, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -67.5, y: 0}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161774377
 MonoBehaviour:
@@ -858,7 +858,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 161774378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &161774378
@@ -1865,6 +1876,7 @@ GameObject:
   - component: {fileID: 739931242}
   - component: {fileID: 739931241}
   - component: {fileID: 739931240}
+  - component: {fileID: 739931243}
   m_Layer: 5
   m_Name: Retsi
   m_TagString: Untagged
@@ -1885,7 +1897,7 @@ RectTransform:
   - {fileID: 161774376}
   - {fileID: 1124461673}
   - {fileID: 134222594}
-  m_Father: {fileID: 1083226914}
+  m_Father: {fileID: 1386809634}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1950,6 +1962,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &739931243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 739931238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b2722c6acd4cf408652169ee897a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickO: {fileID: 0}
+  Button: {fileID: 0}
+  Button1: {fileID: 0}
+  Button2: {fileID: 0}
 --- !u!1 &802927978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,7 +2373,7 @@ GameObject:
   - component: {fileID: 1083226916}
   - component: {fileID: 1083226915}
   - component: {fileID: 1083226918}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: Teleport Exit (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2362,8 +2389,7 @@ Transform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -2.51, y: -0.08, z: 5.79}
   m_LocalScale: {x: 1, y: 0.049999997, z: 1}
-  m_Children:
-  - {fileID: 739931239}
+  m_Children: []
   m_Father: {fileID: 641923132}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -2379,6 +2405,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canv: {fileID: 0}
+  items:
+    serializedVersion: 2
+    m_Bits: 8192
+  useActionAvailable: 1
+  takeActionAvailable: 0
+  lookActionAvailable: 0
 --- !u!23 &1083226916
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2432,7 +2464,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 7.83, z: 1.0000002}
-  m_Center: {x: 0, y: 0.000011444092, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1104986687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,7 +2562,7 @@ GameObject:
   - component: {fileID: 1124461675}
   - component: {fileID: 1124461674}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: LookButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2552,8 +2584,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00012207031}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 2.9, y: -60}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124461674
 MonoBehaviour:
@@ -3027,6 +3059,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1332122491}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1386809634 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4333394642236970, guid: a8026ea82abb1154daeb1320d1e5bac8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1797628873}
 --- !u!1 &1389746321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4170,6 +4207,16 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 2123154496}
+    - target: {fileID: 114943774662363232, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: items.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 114943774662363232, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: UI.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8026ea82abb1154daeb1320d1e5bac8, type: 2}
   m_IsPrefabAsset: 0
