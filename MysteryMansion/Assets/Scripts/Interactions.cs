@@ -32,7 +32,7 @@ public class Interactions : MonoBehaviour {
                     // Osuiko raycast johonkin?
                     if (Physics.Raycast(ray, out hit, Mathf.Infinity, itemLM)) {
                         hit.collider.gameObject.SetActive(false);
-                        pItems.Pickup(hit.transform.gameObject);                        
+                        pItems.Pickup(hit.collider.gameObject);
                     }
                 }
             }
