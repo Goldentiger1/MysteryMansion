@@ -14,14 +14,22 @@ public class inputManager : MonoBehaviour {
 
     public NavMeshAgent player;
 
-    clickableObject clickO;
+    //clickableObject clickO;
+
+    public GameObject Button;
+    public GameObject Button1;
+    public GameObject Button2;
+
 
     // Use this for initialization
     void Start() {
         player = GameObject.Find("Protoplayer").GetComponent<NavMeshAgent>();
         canv = GameObject.FindObjectOfType<Canvas>();
         canv.enabled = false;
-        clickO = GetComponent<clickableObject>();
+        //clickO = GetComponent<clickableObject>();
+        Button = GameObject.Find("UseButton");
+        Button1 = GameObject.Find("LookButton");
+        Button2 = GameObject.Find("TakeButton");
     }
 
     // Update is called once per frame
@@ -35,17 +43,38 @@ public class inputManager : MonoBehaviour {
         }
         var roy = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hot;
-        if (Input.GetKeyDown(KeyCode.Mouse0) && Physics.Raycast(roy, out hot, Mathf.Infinity, items)) {
-            print("Osui");
-            canv.enabled = true;
-        }
-        if (canv.enabled) {
-            RaycastHit hat;
-            Ray rey = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Input.GetKeyDown(KeyCode.Mouse0) && Physics.Raycast(roy, out hat, Mathf.Infinity, ground)) {
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+            if (Physics.Raycast(roy, out hot, Mathf.Infinity, items)) {
+                var co = hot.transform.GetComponent<clickableObject>();
+                print("Osui");
+                if (co) {
+                    OpenClickableCanvas(co);
+                }
+
+            } else if (canv.enabled) {
                 canv.enabled = false;
             }
         }
+    }
+
+    void OpenClickableCanvas(clickableObject c) {
+        canv.enabled = true;
+        if (c.useActionAvailable == true) {
+            Button.SetActive(true);
+        } else {
+            Button.SetActive(false);
+        }
+        if (c.lookActionAvailable == true) {
+            Button1.SetActive(true);
+        } else {
+            Button1.SetActive(false);
+        }
+        if (c.takeActionAvailable == true) {
+            Button2.SetActive(true);
+        } else {
+            Button2.SetActive(false);
+        }
+
     }
 }
 
