@@ -7,6 +7,8 @@ public class clickableObject : MonoBehaviour {
 
     public Canvas canv;
 
+    public LayerMask items;
+
 	// Use this for initialization
 	void Start () {
         canv = GameObject.FindObjectOfType<Canvas>();
@@ -15,13 +17,17 @@ public class clickableObject : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-    void OnMouseEnter() {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            print("hei, toimii");
+        RaycastHit hit;
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Physics.Raycast(ray, out hit, Mathf.Infinity, items)) {
+            print("Osui");
             canv.enabled = true;
         }
-    }
+	}
+
+    //void OnMouseDown() {
+    //        print("hei, toimii");
+    //        canv.enabled = true;
+    //}
 }

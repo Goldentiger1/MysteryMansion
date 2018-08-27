@@ -2346,7 +2346,7 @@ GameObject:
   - component: {fileID: 1083226916}
   - component: {fileID: 1083226915}
   - component: {fileID: 1083226918}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: Teleport Exit (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,6 +2379,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canv: {fileID: 0}
+  items:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!23 &1083226916
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2432,7 +2435,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 7.83, z: 1.0000002}
-  m_Center: {x: 0, y: 0.000011444092, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1104986687
 GameObject:
   m_ObjectHideFlags: 0
@@ -4170,6 +4173,16 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 2123154496}
+    - target: {fileID: 114943774662363232, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: items.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 114943774662363232, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: UI.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8026ea82abb1154daeb1320d1e5bac8, type: 2}
   m_IsPrefabAsset: 0
