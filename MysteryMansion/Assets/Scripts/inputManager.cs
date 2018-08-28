@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class inputManager : MonoBehaviour {
 
@@ -14,11 +15,16 @@ public class inputManager : MonoBehaviour {
 
     public NavMeshAgent player;
 
-    //clickableObject clickO;
+    clickableObject selected;
 
     public GameObject Button;
     public GameObject Button1;
     public GameObject Button2;
+    public GameObject Button3;
+    public GameObject LookImage;
+
+    public bool isMoving;
+    public bool isMovingToObject;
 
 
     // Use this for initialization
@@ -30,15 +36,24 @@ public class inputManager : MonoBehaviour {
         Button = GameObject.Find("UseButton");
         Button1 = GameObject.Find("LookButton");
         Button2 = GameObject.Find("TakeButton");
+        Button3 = GameObject.Find("CloseButton");
+        LookImage = GameObject.Find("LookImage");
     }
 
     // Update is called once per frame
     void Update() {
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && IsPointerOverUIObject()) {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
+
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) {
                 player.destination = hit.point;
+                isMoving = true;
             }
         }
         var roy = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -57,7 +72,16 @@ public class inputManager : MonoBehaviour {
         }
     }
 
+    private bool IsPointerOverUIObject() {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
+    } 
+
     void OpenClickableCanvas(clickableObject c) {
+        selected = c;
         canv.enabled = true;
         if (c.useActionAvailable == true) {
             Button.SetActive(true);
@@ -66,6 +90,7 @@ public class inputManager : MonoBehaviour {
         }
         if (c.lookActionAvailable == true) {
             Button1.SetActive(true);
+            
         } else {
             Button1.SetActive(false);
         }
@@ -74,7 +99,35 @@ public class inputManager : MonoBehaviour {
         } else {
             Button2.SetActive(false);
         }
+        Button3.SetActive(false);
+        LookImage.SetActive(false);
 
+    }
+
+    public void UseAction() {
+        print("Used " + selected.gameObject.name);
+        selected.useAction.Invoke();
+        canv.enabled = false;
+    }
+
+    public void TakeAction() {
+        print("Took " + selected.gameObject.name);
+        selected.takeAction.Invoke();
+        canv.enabled = false;
+    }
+
+    public void LookAction() {
+        print("Looked at " + selected.gameObject.name);
+        selected.lookAction.Invoke();
+        LookImage.SetActive(true);
+        Button.SetActive(false);
+        Button1.SetActive(false);
+        Button2.SetActive(false);
+        Button3.SetActive(true);
+    }
+    public void CloseAction() {
+        canv.enabled = false;
+        Button3.SetActive(false);
     }
 }
 

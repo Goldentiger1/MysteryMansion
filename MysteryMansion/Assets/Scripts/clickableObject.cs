@@ -14,6 +14,10 @@ public class clickableObject : MonoBehaviour {
     public bool takeActionAvailable;
     public bool lookActionAvailable;
 
+    public UnityEvent useAction;
+    public UnityEvent takeAction;
+    public UnityEvent lookAction;
+
     // Use this for initialization
     void Start() {
 
