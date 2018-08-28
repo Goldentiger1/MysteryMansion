@@ -7,6 +7,10 @@ public class Interactions : MonoBehaviour {
     public LayerMask itemLM;
     public Inventory pItems;
 
+    void Start() {
+        pItems = GetComponent<Inventory>();
+    }
+
     void Update() {
         /*
         if (Input.touchCount > 0) {
