@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class inputManager : MonoBehaviour {
 
@@ -14,11 +15,14 @@ public class inputManager : MonoBehaviour {
 
     public NavMeshAgent player;
 
-    //clickableObject clickO;
+    clickableObject selected;
 
     public GameObject Button;
     public GameObject Button1;
     public GameObject Button2;
+
+    public bool isMoving;
+    public bool isMovingToObject;
 
 
     // Use this for initialization
@@ -34,11 +38,18 @@ public class inputManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && IsPointerOverUIObject()) {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
+
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) {
                 player.destination = hit.point;
+                isMoving = true;
             }
         }
         var roy = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -57,7 +68,16 @@ public class inputManager : MonoBehaviour {
         }
     }
 
+    private bool IsPointerOverUIObject() {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
+    } 
+
     void OpenClickableCanvas(clickableObject c) {
+        selected = c;
         canv.enabled = true;
         if (c.useActionAvailable == true) {
             Button.SetActive(true);
@@ -74,6 +94,20 @@ public class inputManager : MonoBehaviour {
         } else {
             Button2.SetActive(false);
         }
+
+    }
+
+    public void UseAction() {
+        print("Used " + selected.gameObject.name);
+        selected.useAction.Invoke();
+        canv.enabled = false;
+    }
+
+    public void TakeAction() {
+        
+    }
+
+    public void LookAction() {
 
     }
 }
