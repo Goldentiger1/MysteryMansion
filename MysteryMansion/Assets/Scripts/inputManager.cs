@@ -20,6 +20,8 @@ public class inputManager : MonoBehaviour {
     public GameObject Button;
     public GameObject Button1;
     public GameObject Button2;
+    public GameObject Button3;
+    public GameObject LookImage;
 
     public bool isMoving;
     public bool isMovingToObject;
@@ -34,6 +36,8 @@ public class inputManager : MonoBehaviour {
         Button = GameObject.Find("UseButton");
         Button1 = GameObject.Find("LookButton");
         Button2 = GameObject.Find("TakeButton");
+        Button3 = GameObject.Find("CloseButton");
+        LookImage = GameObject.Find("LookImage");
     }
 
     // Update is called once per frame
@@ -86,6 +90,7 @@ public class inputManager : MonoBehaviour {
         }
         if (c.lookActionAvailable == true) {
             Button1.SetActive(true);
+            
         } else {
             Button1.SetActive(false);
         }
@@ -94,6 +99,8 @@ public class inputManager : MonoBehaviour {
         } else {
             Button2.SetActive(false);
         }
+        Button3.SetActive(false);
+        LookImage.SetActive(false);
 
     }
 
@@ -104,11 +111,23 @@ public class inputManager : MonoBehaviour {
     }
 
     public void TakeAction() {
-        
+        print("Took " + selected.gameObject.name);
+        selected.takeAction.Invoke();
+        canv.enabled = false;
     }
 
     public void LookAction() {
-
+        print("Looked at " + selected.gameObject.name);
+        selected.lookAction.Invoke();
+        LookImage.SetActive(true);
+        Button.SetActive(false);
+        Button1.SetActive(false);
+        Button2.SetActive(false);
+        Button3.SetActive(true);
+    }
+    public void CloseAction() {
+        canv.enabled = false;
+        Button3.SetActive(false);
     }
 }
 
