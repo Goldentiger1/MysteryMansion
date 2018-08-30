@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class inputManager : MonoBehaviour {
+
+    public Inventory pItems;
 
     public LayerMask ground;
     public LayerMask items;
@@ -21,7 +24,10 @@ public class inputManager : MonoBehaviour {
     public GameObject Button1;
     public GameObject Button2;
     public GameObject Button3;
-    public GameObject LookImage;
+
+    public Image LookImage;
+
+    public Text description;
 
     public bool isMoving;
     public bool isMovingToObject;
@@ -33,11 +39,13 @@ public class inputManager : MonoBehaviour {
         canv = GameObject.FindObjectOfType<Canvas>();
         canv.enabled = false;
         //clickO = GetComponent<clickableObject>();
-        Button = GameObject.Find("UseButton");
-        Button1 = GameObject.Find("LookButton");
-        Button2 = GameObject.Find("TakeButton");
-        Button3 = GameObject.Find("CloseButton");
-        LookImage = GameObject.Find("LookImage");
+        Button = transform.FindDeepChild("UseButton").gameObject;
+        Button1 = transform.FindDeepChild("LookButton").gameObject;
+        Button2 = transform.FindDeepChild("TakeButton").gameObject;
+        Button3 = transform.FindDeepChild("CloseButton").gameObject;
+        LookImage = transform.FindDeepChild("LookImage").GetComponent<Image>();
+        description = transform.FindDeepChild("Description").GetComponent<Text>();
+        pItems = GameObject.FindObjectOfType<Inventory>();
     }
 
     // Update is called once per frame
@@ -80,9 +88,14 @@ public class inputManager : MonoBehaviour {
         return results.Count > 0;
     } 
 
+    public void ObjectDescription () {
+        description.text = selected.objDescription;
+    }
+
     void OpenClickableCanvas(clickableObject c) {
         selected = c;
         canv.enabled = true;
+        description.text = c.objDescription;
         if (c.useActionAvailable == true) {
             Button.SetActive(true);
         } else {
@@ -94,13 +107,13 @@ public class inputManager : MonoBehaviour {
         } else {
             Button1.SetActive(false);
         }
-        if (c.takeActionAvailable == true) {
+        if (c.pickupPrefab) {
             Button2.SetActive(true);
         } else {
             Button2.SetActive(false);
         }
         Button3.SetActive(false);
-        LookImage.SetActive(false);
+        LookImage.enabled = false;
 
     }
 
@@ -114,16 +127,21 @@ public class inputManager : MonoBehaviour {
         print("Took " + selected.gameObject.name);
         selected.takeAction.Invoke();
         canv.enabled = false;
+        pItems.Pickup(selected.pickupPrefab);
+        selected.gameObject.SetActive(false);
     }
 
     public void LookAction() {
         print("Looked at " + selected.gameObject.name);
         selected.lookAction.Invoke();
-        LookImage.SetActive(true);
+        LookImage.enabled = true;
+        var img = selected.lookImage;
+        LookImage.GetComponent<Image>();
         Button.SetActive(false);
         Button1.SetActive(false);
         Button2.SetActive(false);
         Button3.SetActive(true);
+        
     }
     public void CloseAction() {
         canv.enabled = false;

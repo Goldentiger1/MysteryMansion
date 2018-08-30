@@ -11,16 +11,23 @@ public class clickableObject : MonoBehaviour {
     //public LayerMask items;
 
     public bool useActionAvailable;
-    public bool takeActionAvailable;
+    //public bool takeActionAvailable;
     public bool lookActionAvailable;
+
+    public string objDescription;
+
+    public GameObject pickupPrefab;
+
+    public Image lookImage;
 
     public UnityEvent useAction;
     public UnityEvent takeAction;
     public UnityEvent lookAction;
 
-    // Use this for initialization
-    void Start() {
+    
 
+    // Use this for initialization
+    void Start() { 
     }
     //canv = GameObject.FindObjectOfType<Canvas>();
     //canv.enabled = false;
