@@ -24,8 +24,8 @@ public class inputManager : MonoBehaviour {
     public GameObject Button1;
     public GameObject Button2;
     public GameObject Button3;
-
-    public Image LookImage;
+    public GameObject descBG;
+    public GameObject LookImage;
 
     public Text description;
 
@@ -43,7 +43,8 @@ public class inputManager : MonoBehaviour {
         Button1 = transform.FindDeepChild("LookButton").gameObject;
         Button2 = transform.FindDeepChild("TakeButton").gameObject;
         Button3 = transform.FindDeepChild("CloseButton").gameObject;
-        LookImage = transform.FindDeepChild("LookImage").GetComponent<Image>();
+        descBG = transform.FindDeepChild("DescImage").gameObject;
+        LookImage = transform.FindDeepChild("LookImage").gameObject;
         description = transform.FindDeepChild("Description").GetComponent<Text>();
         pItems = GameObject.FindObjectOfType<Inventory>();
     }
@@ -112,8 +113,9 @@ public class inputManager : MonoBehaviour {
         } else {
             Button2.SetActive(false);
         }
+        descBG.SetActive(true);
         Button3.SetActive(false);
-        LookImage.enabled = false;
+        LookImage.SetActive(false);
 
     }
 
@@ -134,13 +136,14 @@ public class inputManager : MonoBehaviour {
     public void LookAction() {
         print("Looked at " + selected.gameObject.name);
         selected.lookAction.Invoke();
-        LookImage.enabled = true;
-        var img = selected.lookImage;
-        LookImage.GetComponent<Image>();
+        LookImage.SetActive(true);
+        var img = LookImage.GetComponentInChildren<Image>();
+        img.sprite = selected.lookImage;
         Button.SetActive(false);
         Button1.SetActive(false);
         Button2.SetActive(false);
         Button3.SetActive(true);
+        descBG.SetActive(false);
         
     }
     public void CloseAction() {

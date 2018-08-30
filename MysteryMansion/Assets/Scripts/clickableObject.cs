@@ -18,7 +18,7 @@ public class clickableObject : MonoBehaviour {
 
     public GameObject pickupPrefab;
 
-    public Image lookImage;
+    public Sprite lookImage;
 
     public UnityEvent useAction;
     public UnityEvent takeAction;
