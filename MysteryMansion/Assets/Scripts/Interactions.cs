@@ -7,6 +7,10 @@ public class Interactions : MonoBehaviour {
     public LayerMask itemLM;
     public Inventory pItems;
 
+    void Start() {
+        pItems = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+    }
+
     void Update() {
         /*
         if (Input.touchCount > 0) {
@@ -31,8 +35,9 @@ public class Interactions : MonoBehaviour {
                     RaycastHit hit;
                     // Osuiko raycast johonkin?
                     if (Physics.Raycast(ray, out hit, Mathf.Infinity, itemLM)) {
-                        hit.collider.gameObject.SetActive(false);
+                        //hit.collider.gameObject.SetActive(false);
                         pItems.Pickup(hit.collider.gameObject);
+                        Destroy(hit.collider.gameObject);
                     }
                 }
             }
