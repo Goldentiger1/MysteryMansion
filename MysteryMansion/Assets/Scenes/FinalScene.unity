@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNav: {fileID: 0}
-  destination: {fileID: 915916199}
+  destination: {fileID: 744230913}
   rooms:
     serializedVersion: 2
     m_Bits: 0
@@ -581,7 +581,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519730195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.05, y: 5.63, z: -23.72}
+  m_LocalPosition: {x: 33.05, y: 5.63, z: 7.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2082362537}
@@ -621,6 +621,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameras: []
+--- !u!4 &744230913 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4218699805190722, guid: a47b11783c69b15478facddc0c187b0b,
+    type: 2}
+  m_PrefabInternal: {fileID: 915916198}
 --- !u!1 &804378341
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +751,7 @@ Prefab:
         type: 2}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 1222987093}
+      objectReference: {fileID: 0}
     - target: {fileID: 20032511810247398, guid: a47b11783c69b15478facddc0c187b0b,
         type: 2}
       propertyPath: m_CullingMask.m_Bits
@@ -756,14 +761,14 @@ Prefab:
       propertyPath: m_TagString
       value: Background Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 114716021980341458, guid: a47b11783c69b15478facddc0c187b0b,
+        type: 2}
+      propertyPath: destination
+      value: 
+      objectReference: {fileID: 1222987093}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a47b11783c69b15478facddc0c187b0b, type: 2}
   m_IsPrefabAsset: 0
---- !u!4 &915916199 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4575574498420988, guid: a47b11783c69b15478facddc0c187b0b,
-    type: 2}
-  m_PrefabInternal: {fileID: 915916198}
 --- !u!4 &1222987093
 Transform:
   m_ObjectHideFlags: 0
