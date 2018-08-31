@@ -53,6 +53,8 @@ public class inputManager : MonoBehaviour {
     void Update() {
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && IsPointerOverUIObject()) {
+            //print("Eka");
+
             return;
         }
 
@@ -70,7 +72,7 @@ public class inputManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
             if (Physics.Raycast(roy, out hot, Mathf.Infinity, items)) {
                 var co = hot.transform.GetComponent<clickableObject>();
-                print("Osui");
+                //print("Osui");
                 if (co) {
                     OpenClickableCanvas(co);
                 }
