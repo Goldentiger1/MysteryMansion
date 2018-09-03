@@ -433,7 +433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e41629c692a894d81609b46ef2fbb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ListSize: 5
   dbText: {fileID: 1725432159}
   ItemsList: []
   InventoryList:

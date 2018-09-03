@@ -36,6 +36,7 @@ public class Interactions : MonoBehaviour {
                     // Osuiko raycast johonkin?
                     if (Physics.Raycast(ray, out hit, Mathf.Infinity, itemLM)) {
                         //hit.collider.gameObject.SetActive(false);
+                        print("adsfasdf");
                         pItems.Pickup(hit.collider.gameObject);
                         Destroy(hit.collider.gameObject);
                     }
