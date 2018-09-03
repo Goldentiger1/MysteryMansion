@@ -142,11 +142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f64111c68ae0a46925653abf808c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pItems: {fileID: 0}
   ground:
     serializedVersion: 2
     m_Bits: 512
-  items:
+  intObjects:
     serializedVersion: 2
     m_Bits: 0
   UI:
@@ -160,6 +159,7 @@ MonoBehaviour:
   Button3: {fileID: 0}
   descBG: {fileID: 0}
   LookImage: {fileID: 0}
+  pItems: {fileID: 0}
   description: {fileID: 0}
   isMoving: 0
   isMovingToObject: 0
@@ -436,7 +436,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1481412078663294, guid: fe40a3d09f92e554fb4910bbf3ac282c, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe40a3d09f92e554fb4910bbf3ac282c, type: 2}
@@ -991,6 +991,10 @@ Prefab:
     - target: {fileID: 1889422552098386, guid: a47b11783c69b15478facddc0c187b0b, type: 2}
       propertyPath: m_Name
       value: LobbyRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889422552098386, guid: a47b11783c69b15478facddc0c187b0b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a47b11783c69b15478facddc0c187b0b, type: 2}
