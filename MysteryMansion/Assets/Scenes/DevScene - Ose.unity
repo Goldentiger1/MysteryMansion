@@ -445,6 +445,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 109607925}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &175176116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1526607309787786, guid: 9edb044e6a3f1724a8e7828122138831,
+    type: 2}
+  m_PrefabInternal: {fileID: 1366999922}
+--- !u!114 &175176117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 175176116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6cf00b776ecf445b021825479beb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+    serializedVersion: 2
+    m_Bits: 8192
+  pItems: {fileID: 0}
 --- !u!1001 &218762495
 Prefab:
   m_ObjectHideFlags: 0
@@ -1364,6 +1384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useActionAvailable: 1
+  takeActionAvailable: 0
   lookActionAvailable: 1
   objDescription: A wooden door.
   pickupPrefab: {fileID: 0}
@@ -1871,6 +1892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useActionAvailable: 1
+  takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: This object is on the wall.
   pickupPrefab: {fileID: 0}
@@ -2382,6 +2404,126 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1332122491}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1366999922
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1954255433}
+    m_Modifications:
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -152
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224090975843806420, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114388556831328400, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: InventoryList.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441859230093220, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.8018868
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441859230093220, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.7224546
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441859230093220, guid: 9edb044e6a3f1724a8e7828122138831,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.7224546
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9edb044e6a3f1724a8e7828122138831, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!114 &1405888164 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114649400620445534, guid: a8026ea82abb1154daeb1320d1e5bac8,
@@ -2510,40 +2652,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useActionAvailable: 0
+  takeActionAvailable: 1
   lookActionAvailable: 1
   objDescription: An object you can pick up.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 06909f2cf2c694d4fa2df85f86e7a351, type: 3}
   useAction:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   takeAction:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1405888164}
-        m_MethodName: TakeAction
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   lookAction:
@@ -3481,6 +3602,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114775587034514284, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4840459414386140, guid: a8026ea82abb1154daeb1320d1e5bac8, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3512,6 +3638,31 @@ Prefab:
     - target: {fileID: 4840459414386140, guid: a8026ea82abb1154daeb1320d1e5bac8, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114775587034514284, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114775587034514284, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114775587034514284, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1405888164}
+    - target: {fileID: 114775587034514284, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TakeAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 114775587034514284, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8026ea82abb1154daeb1320d1e5bac8, type: 2}
@@ -3865,6 +4016,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1946233815}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!224 &1954255433 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224468563673075140, guid: a8026ea82abb1154daeb1320d1e5bac8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1797628873}
 --- !u!1 &2002876472
 GameObject:
   m_ObjectHideFlags: 0
