@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Interactions : MonoBehaviour {
-    public LayerMask itemLM;
+    public LayerMask items;
     public Inventory pItems;
 
     void Start() {
@@ -28,13 +28,13 @@ public class Interactions : MonoBehaviour {
 
             // Onko näytöllä sormia?
             if (Input.touchCount > 0) {
-            foreach (Touch finger in Input.touches) {
+            //foreach (Touch finger in Input.touches) {
                 // Kun sormi on näytöllä
-                if (Input.GetTouch(finger.fingerId).phase == TouchPhase.Began) {                    
-                    Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(finger.fingerId).position);
+                if (Input.GetTouch(0).phase == TouchPhase.Began) {                    
+                    Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
                     RaycastHit hit;
                     // Osuiko raycast johonkin?
-                    if (Physics.Raycast(ray, out hit, Mathf.Infinity, itemLM)) {
+                    if (Physics.Raycast(ray, out hit, Mathf.Infinity, items)) {
                         //hit.collider.gameObject.SetActive(false);
                         print("adsfasdf");
                         pItems.Pickup(hit.collider.gameObject);
@@ -44,4 +44,3 @@ public class Interactions : MonoBehaviour {
             }
         }
     }
-}

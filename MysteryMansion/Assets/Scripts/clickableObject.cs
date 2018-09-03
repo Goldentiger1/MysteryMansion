@@ -11,7 +11,7 @@ public class clickableObject : MonoBehaviour {
     //public LayerMask items;
 
     public bool useActionAvailable;
-    //public bool takeActionAvailable;
+    public bool takeActionAvailable;
     public bool lookActionAvailable;
 
     public string objDescription;

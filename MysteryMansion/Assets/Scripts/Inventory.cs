@@ -10,19 +10,9 @@ public class Inventory : MonoBehaviour {
 
     public void Pickup(GameObject item) {
         ItemsList.Add(item);
-        //dbText.text = "BOOP!"; // DEBUG PURPOSE
+        print ("BOOP!"); // DEBUG PURPOSE
 
-
-
-        //item.GetComponent<ItemScript /*Lisää tähän kerättävän gameobjektin Skripti*/>();
-
-
-        /*
-        itemImages[i].sprite = itemToAdd.sprite;
-        itemImages[i].enabled = true;
-        */
-
-        return;
+                return;
     }
 }
 

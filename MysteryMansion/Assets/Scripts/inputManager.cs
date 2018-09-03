@@ -7,11 +7,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class inputManager : MonoBehaviour {
-
-    public Inventory pItems;
-
+    
     public LayerMask ground;
-    public LayerMask items;
+    public LayerMask intObjects;
     public LayerMask UI;
 
     public Canvas canv;
@@ -26,6 +24,8 @@ public class inputManager : MonoBehaviour {
     public GameObject Button3;
     public GameObject descBG;
     public GameObject LookImage;
+
+    public Inventory pItems;
 
     public Text description;
 
@@ -51,51 +51,60 @@ public class inputManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        bool poke = false;
+        Ray ray = new Ray();
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !IsPointerOverUIObject(Input.mousePosition)) {
+            poke = true;
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && IsPointerOverUIObject()) {
-            //print("Eka");
+            // poke = true?
+            // ray = ...
+        }
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && !IsPointerOverUIObject(Input.GetTouch(0).position)) {
+            poke = true;
+            ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
+            // sama touchille
+        }
+        if (!poke) {
             return;
         }
+        // reagoidaan pokeen
 
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
 
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) {
-                player.destination = hit.point;
-                isMoving = true;
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, intObjects)) {
+            var co = hit.transform.GetComponent<clickableObject>();
+            //print("Osui");
+            if (co) {
+                OpenClickableCanvas(co);
             }
+
+        } else if (canv.enabled) {
+            canv.enabled = false;
         }
-        var roy = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hot;
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            if (Physics.Raycast(roy, out hot, Mathf.Infinity, items)) {
-                var co = hot.transform.GetComponent<clickableObject>();
-                //print("Osui");
-                if (co) {
-                    OpenClickableCanvas(co);
-                }
 
-            } else if (canv.enabled) {
-                canv.enabled = false;
-            }
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) {
+            player.destination = hit.point;
+            isMoving = true;
         }
-    }
 
-    private bool IsPointerOverUIObject() {
-        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
-        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        List<RaycastResult> results = new List<RaycastResult>();
-        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
-        return results.Count > 0;
-    } 
+        
+}
 
-    public void ObjectDescription () {
-        description.text = selected.objDescription;
-    }
+private bool IsPointerOverUIObject(Vector2 position) {
+    PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = position;
+    List<RaycastResult> results = new List<RaycastResult>();
+    EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+    return results.Count > 0;
+}
 
-    void OpenClickableCanvas(clickableObject c) {
+//public void ObjectDescription () {
+//    description.text = selected.objDescription;
+//}
+
+void OpenClickableCanvas(clickableObject c) {
         selected = c;
         canv.enabled = true;
         description.text = c.objDescription;
@@ -110,10 +119,14 @@ public class inputManager : MonoBehaviour {
         } else {
             Button1.SetActive(false);
         }
-        if (c.pickupPrefab) {
+        if (c.takeActionAvailable == true) {
             Button2.SetActive(true);
         } else {
             Button2.SetActive(false);
+            //if (c.pickupPrefab) {
+            //    Button2.SetActive(true);
+            //} else {
+            //    Button2.SetActive(false);
         }
         descBG.SetActive(true);
         Button3.SetActive(false);
