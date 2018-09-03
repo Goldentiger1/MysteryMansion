@@ -2382,6 +2382,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1332122491}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1405888164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114649400620445534, guid: a8026ea82abb1154daeb1320d1e5bac8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1797628873}
+  m_Script: {fileID: 11500000, guid: 68f64111c68ae0a46925653abf808c3b, type: 3}
 --- !u!1 &1446083847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,7 +2532,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   takeAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1405888164}
+        m_MethodName: TakeAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   lookAction:
