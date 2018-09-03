@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class inputManager : MonoBehaviour {
     
     public LayerMask ground;
-    public LayerMask items;
+    public LayerMask intObjects;
     public LayerMask UI;
 
     public Canvas canv;
@@ -53,14 +53,14 @@ public class inputManager : MonoBehaviour {
     void Update() {
         bool poke = false;
         Ray ray = new Ray();
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !IsPointerOverUIObject()) {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !IsPointerOverUIObject(Input.mousePosition)) {
             poke = true;
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             // poke = true?
             // ray = ...
         }
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && !IsPointerOverUIObject(Input.GetTouch(0).position)) {
             poke = true;
             ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
@@ -73,7 +73,7 @@ public class inputManager : MonoBehaviour {
 
 
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, items)) {
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, intObjects)) {
             var co = hit.transform.GetComponent<clickableObject>();
             //print("Osui");
             if (co) {
@@ -92,9 +92,9 @@ public class inputManager : MonoBehaviour {
         
 }
 
-private bool IsPointerOverUIObject() {
+private bool IsPointerOverUIObject(Vector2 position) {
     PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
-    eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        eventDataCurrentPosition.position = position;
     List<RaycastResult> results = new List<RaycastResult>();
     EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
     return results.Count > 0;

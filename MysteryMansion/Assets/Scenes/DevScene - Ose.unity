@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 717205541}
   - component: {fileID: 717205540}
   - component: {fileID: 717205544}
-  m_Layer: 13
+  m_Layer: 15
   m_Name: Openable Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1760,7 +1760,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 28192
+    m_Bits: 60960
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1860,7 +1860,7 @@ GameObject:
   - component: {fileID: 1083226916}
   - component: {fileID: 1083226915}
   - component: {fileID: 1083226918}
-  m_Layer: 13
+  m_Layer: 15
   m_Name: Searchobject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2608,7 +2608,7 @@ GameObject:
   - component: {fileID: 1463487720}
   - component: {fileID: 1463487719}
   - component: {fileID: 1463487718}
-  m_Layer: 13
+  m_Layer: 15
   m_Name: Pickup Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3489,7 +3489,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 28160
+    m_Bits: 60928
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3583,7 +3583,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 28471
+    m_Bits: 61239
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3663,6 +3663,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649400620445534, guid: a8026ea82abb1154daeb1320d1e5bac8,
+        type: 2}
+      propertyPath: intObjects.m_Bits
+      value: 32768
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8026ea82abb1154daeb1320d1e5bac8, type: 2}
