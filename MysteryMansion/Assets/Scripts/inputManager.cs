@@ -22,8 +22,12 @@ public class inputManager : MonoBehaviour {
     public GameObject Button1;
     public GameObject Button2;
     public GameObject Button3;
+    public GameObject InventoryButton;
     public GameObject descBG;
     public GameObject LookImage;
+    public GameObject Inventory;
+    public GameObject UIelements;
+    public GameObject InventoryElements;
 
     public Inventory pItems;
 
@@ -35,9 +39,14 @@ public class inputManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        InventoryButton = transform.FindDeepChild("InventoryButton").gameObject;
         player = GameObject.Find("Protoplayer").GetComponent<NavMeshAgent>();
         canv = GameObject.FindObjectOfType<Canvas>();
-        canv.enabled = false;
+        pItems = GameObject.FindObjectOfType<Inventory>();
+        UIelements = transform.FindDeepChild("UIelements").gameObject;
+        UIelements.SetActive(false);
+        InventoryElements = transform.FindDeepChild("InventoryElements").gameObject;
+        InventoryElements.SetActive(false);
         //clickO = GetComponent<clickableObject>();
         Button = transform.FindDeepChild("UseButton").gameObject;
         Button1 = transform.FindDeepChild("LookButton").gameObject;
@@ -46,7 +55,7 @@ public class inputManager : MonoBehaviour {
         descBG = transform.FindDeepChild("DescImage").gameObject;
         LookImage = transform.FindDeepChild("LookImage").gameObject;
         description = transform.FindDeepChild("Description").GetComponent<Text>();
-        pItems = GameObject.FindObjectOfType<Inventory>();
+        Inventory = transform.FindDeepChild("Inventory").gameObject;
     }
 
     // Update is called once per frame
@@ -79,9 +88,9 @@ public class inputManager : MonoBehaviour {
             if (co) {
                 OpenClickableCanvas(co);
             }
-
-        } else if (canv.enabled) {
-            canv.enabled = false;
+        } else if (canv.enabled || InventoryElements == true) {
+            UIelements.SetActive(false);
+            InventoryElements.SetActive(false);
         }
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) {
@@ -106,8 +115,9 @@ private bool IsPointerOverUIObject(Vector2 position) {
 
 void OpenClickableCanvas(clickableObject c) {
         selected = c;
-        canv.enabled = true;
         description.text = c.objDescription;
+        UIelements.SetActive(true);
+        canv.enabled = true;
         if (c.useActionAvailable == true) {
             Button.SetActive(true);
         } else {
@@ -134,16 +144,21 @@ void OpenClickableCanvas(clickableObject c) {
 
     }
 
+    public void InventoryAction() {
+        InventoryElements.SetActive(true);
+    }
+
     public void UseAction() {
         print("Used " + selected.gameObject.name);
         selected.useAction.Invoke();
-        canv.enabled = false;
+        UIelements.SetActive(false);
+
     }
 
     public void TakeAction() {
         print("Took " + selected.gameObject.name);
         selected.takeAction.Invoke();
-        canv.enabled = false;
+        UIelements.SetActive(false);
         pItems.Pickup(selected.pickupPrefab);
         selected.gameObject.SetActive(false);
     }
@@ -162,7 +177,7 @@ void OpenClickableCanvas(clickableObject c) {
         
     }
     public void CloseAction() {
-        canv.enabled = false;
+        UIelements.SetActive(false);
         Button3.SetActive(false);
     }
 }
