@@ -88,7 +88,7 @@ public class inputManager : MonoBehaviour {
             if (co) {
                 OpenClickableCanvas(co);
             }
-        } else if (canv.enabled || InventoryElements == true) {
+        } else if (canv.enabled || InventoryElements) {
             UIelements.SetActive(false);
             InventoryElements.SetActive(false);
         }
@@ -118,18 +118,18 @@ void OpenClickableCanvas(clickableObject c) {
         description.text = c.objDescription;
         UIelements.SetActive(true);
         canv.enabled = true;
-        if (c.useActionAvailable == true) {
+        if (c.useActionAvailable) {
             Button.SetActive(true);
         } else {
             Button.SetActive(false);
         }
-        if (c.lookActionAvailable == true) {
+        if (c.lookActionAvailable) {
             Button1.SetActive(true);
             
         } else {
             Button1.SetActive(false);
         }
-        if (c.takeActionAvailable == true) {
+        if (c.takeActionAvailable) {
             Button2.SetActive(true);
         } else {
             Button2.SetActive(false);
@@ -145,7 +145,7 @@ void OpenClickableCanvas(clickableObject c) {
     }
 
     public void InventoryAction() {
-        InventoryElements.SetActive(true);
+        InventoryElements.SetActive(!InventoryElements.activeSelf);
     }
 
     public void UseAction() {

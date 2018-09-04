@@ -31,6 +31,10 @@ public class Inventory : MonoBehaviour {
                 return;
     }
 
+    public void Remove(GameObject item) {
+        ItemsList.Remove(item);
+        //item.SetActive(false);
+    }
 
 }
 
