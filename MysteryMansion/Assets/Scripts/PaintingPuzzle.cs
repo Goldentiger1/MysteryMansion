@@ -5,4 +5,6 @@ using UnityEngine;
 public class PaintingPuzzle : MonoBehaviour {
     public List<GameObject> itemsPaintings;
     public List<GameObject> paintingsTransforms;
+
+
 }
