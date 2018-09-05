@@ -26,9 +26,9 @@ public class Inventory : MonoBehaviour {
         //foreach (var items in ItemsList) {
         //    InventoryList.Add(items);
         //}
-        print ("BOOP!"); // DEBUG PURPOSE
+        //print ("BOOP!"); // DEBUG PURPOSE
 
-                return;
+                //return;
     }
 
     public void Remove(GameObject item) {
