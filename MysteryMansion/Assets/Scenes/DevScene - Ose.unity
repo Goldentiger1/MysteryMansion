@@ -1792,7 +1792,7 @@ MonoBehaviour:
   objDescription: An object you can pick up.
   pickupPrefab: {fileID: 1577851307286534, guid: f2a389429a5c6454192c9a1fc4cab77c,
     type: 2}
-  lookImage: {fileID: 21300000, guid: 06909f2cf2c694d4fa2df85f86e7a351, type: 3}
+  lookImage: {fileID: 21300000, guid: cba3490c508c46c42828c85cc68c090f, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []

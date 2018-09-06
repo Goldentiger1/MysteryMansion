@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class inputManager : MonoBehaviour {
     
+    public enum UIstate { Normal, InventoryUsing }
+
     public LayerMask ground;
     public LayerMask intObjects;
     public LayerMask UI;
@@ -33,12 +35,12 @@ public class inputManager : MonoBehaviour {
 
     public Text description;
 
-    public bool isMoving;
-    public bool isMovingToObject;
-
-
     public void InventoryItemSelected(inventoryItem item) {
-
+        print(item.gameObject.name);
+        // 
+        //
+        //
+        //
     }
 
     // Use this for initialization
@@ -99,7 +101,6 @@ public class inputManager : MonoBehaviour {
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) {
             player.destination = hit.point;
-            isMoving = true;
         }
 
         
