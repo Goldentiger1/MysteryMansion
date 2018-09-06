@@ -958,8 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemsList: []
-  InventoryList: []
-  itemsContainer: {fileID: 0}
+  itemsContainer: {fileID: 224819718776840992}
   buttonPrefab: {fileID: 1842962513660190, guid: 9b09931c97eb5ff40880d9d60b1c510b,
     type: 2}
 --- !u!114 &114649400620445534
@@ -996,8 +995,6 @@ MonoBehaviour:
   InventoryElements: {fileID: 0}
   pItems: {fileID: 0}
   description: {fileID: 0}
-  isMoving: 0
-  isMovingToObject: 0
 --- !u!114 &114656429903330952
 MonoBehaviour:
   m_ObjectHideFlags: 1
