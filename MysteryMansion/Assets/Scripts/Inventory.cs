@@ -10,19 +10,35 @@ public class Inventory : MonoBehaviour {
 
     public GameObject itemsContainer;
 
-    public Sprite item1;
+    public GameObject buttonPrefab;
 
     void Start() {
         itemsContainer = GameObject.Find("ItemsContainer");
-        item1 = GameObject.Find("Item 1").GetComponent<Image>().sprite;
     }
 
     void Update() {
     
     }
 
+    void InventoryRefresh() {
+        // tyhjennä InventoryUI
+        //ItemsList.
+
+        // käy itemit ItemsLististä läpi
+        foreach (var item in ItemsList) {
+            var invItem = item.GetComponent<inventoryItem>();
+           var button = Instantiate(buttonPrefab, itemsContainer.transform);
+            button.GetComponent<Image>().sprite = invItem.itemSprite;
+        }
+        // luo nappi jokaiselle itemille ItemsListissä
+
+        // aseta oikea sprite oikealle napille mitä luodaan
+        // aseta oikealle napille oikeat toiminnot
+    }
+
     public void Pickup(GameObject item) {
         ItemsList.Add(item);
+        InventoryRefresh();
         //foreach (var items in ItemsList) {
         //    InventoryList.Add(items);
         //}

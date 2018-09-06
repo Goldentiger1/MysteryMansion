@@ -37,6 +37,10 @@ public class inputManager : MonoBehaviour {
     public bool isMovingToObject;
 
 
+    public void InventoryItemSelected(inventoryItem item) {
+
+    }
+
     // Use this for initialization
     void Start() {
         InventoryButton = transform.FindDeepChild("InventoryButton").gameObject;
