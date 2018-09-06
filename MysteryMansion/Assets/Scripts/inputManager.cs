@@ -10,6 +10,10 @@ public class inputManager : MonoBehaviour {
     
     public enum UIstate { Normal, InventoryUsing }
 
+    UIstate currentstate;
+
+    inventoryItem inventorySelected;
+
     public LayerMask ground;
     public LayerMask intObjects;
     public LayerMask UI;
@@ -36,11 +40,20 @@ public class inputManager : MonoBehaviour {
     public Text description;
 
     public void InventoryItemSelected(inventoryItem item) {
+        currentstate = UIstate.InventoryUsing;
+        inventorySelected = item;
         print(item.gameObject.name);
-        // 
-        //
-        //
-        //
+    }
+
+    void TryUseItem(inventoryItem item, clickableObject co) {
+        foreach (var useEvent in item.useEvents) {
+            //print(useEvent.target.gameObject.name);
+            if (useEvent.target == co) {
+                useEvent.reaction.Invoke();
+                return;
+            }
+        }
+        print("Nothing happens.");
     }
 
     // Use this for initialization
@@ -92,7 +105,11 @@ public class inputManager : MonoBehaviour {
             var co = hit.transform.GetComponent<clickableObject>();
             //print("Osui");
             if (co) {
-                OpenClickableCanvas(co);
+                if (currentstate == UIstate.InventoryUsing) {
+                    TryUseItem(inventorySelected, co);
+                } else {
+                    OpenClickableCanvas(co);
+                }
             }
         } else if (canv.enabled || InventoryElements) {
             UIelements.SetActive(false);
