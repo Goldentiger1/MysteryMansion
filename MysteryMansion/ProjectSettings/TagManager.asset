@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Background Camera
   - Inventory
+  - Paintings
+  - PaintingsPosition
   layers:
   - Default
   - TransparentFX
