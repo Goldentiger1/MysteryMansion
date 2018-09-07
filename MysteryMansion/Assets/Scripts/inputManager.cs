@@ -7,22 +7,11 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class inputManager : MonoBehaviour {
-    
-    public enum UIstate { Normal, InventoryUsing, InventoryDragging }
 
-    UIstate currentstate;
-
-    inventoryItem inventorySelected;
-
-    public LayerMask ground;
-    public LayerMask intObjects;
-    public LayerMask UI;
 
     public Canvas canv;
 
-    public NavMeshAgent player;
-
-    clickableObject selected;
+    public enum UIstate { Normal, InventoryUsing, InventoryDragging }
 
     public GameObject Button;
     public GameObject Button1;
@@ -37,8 +26,20 @@ public class inputManager : MonoBehaviour {
 
     public Inventory pItems;
 
+    public LayerMask ground;
+    public LayerMask intObjects;
+    public LayerMask UI;
+
+    public NavMeshAgent player;
+
     public Text description;
     public Text UseText;
+
+    public UIstate currentstate;
+
+    clickableObject selected;
+    inventoryItem inventorySelected;
+
 
     public void InventoryItemSelected(inventoryItem item) {
         currentstate = UIstate.InventoryUsing;
@@ -71,7 +72,6 @@ public class inputManager : MonoBehaviour {
         UIelements.SetActive(false);
         InventoryElements = transform.FindDeepChild("InventoryElements").gameObject;
         InventoryElements.SetActive(false);
-        //clickO = GetComponent<clickableObject>();
         Button = transform.FindDeepChild("UseButton").gameObject;
         Button1 = transform.FindDeepChild("LookButton").gameObject;
         Button2 = transform.FindDeepChild("TakeButton").gameObject;
@@ -113,11 +113,14 @@ public class inputManager : MonoBehaviour {
             if (co) {
                 if (currentstate == UIstate.InventoryUsing) {
                     TryUseItem(inventorySelected, co);
+                    currentstate = UIstate.Normal;
                 } else {
                     OpenClickableCanvas(co);
                 }
             }
         } else if (canv.enabled || InventoryElements) {
+            currentstate = UIstate.Normal;
+
             UIelements.SetActive(false);
             InventoryElements.SetActive(false);
         }
@@ -126,22 +129,22 @@ public class inputManager : MonoBehaviour {
             player.destination = hit.point;
         }
 
-        
-}
 
-private bool IsPointerOverUIObject(Vector2 position) {
-    PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+    }
+
+    private bool IsPointerOverUIObject(Vector2 position) {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
         eventDataCurrentPosition.position = position;
-    List<RaycastResult> results = new List<RaycastResult>();
-    EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
-    return results.Count > 0;
-}
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
+    }
 
-//public void ObjectDescription () {
-//    description.text = selected.objDescription;
-//}
+    //public void ObjectDescription () {
+    //    description.text = selected.objDescription;
+    //}
 
-void OpenClickableCanvas(clickableObject c) {
+    void OpenClickableCanvas(clickableObject c) {
         selected = c;
         description.text = c.objDescription;
         UIelements.SetActive(true);
@@ -153,7 +156,7 @@ void OpenClickableCanvas(clickableObject c) {
         }
         if (c.lookActionAvailable) {
             Button1.SetActive(true);
-            
+
         } else {
             Button1.SetActive(false);
         }
@@ -175,6 +178,9 @@ void OpenClickableCanvas(clickableObject c) {
     public void InventoryAction() {
         InventoryElements.SetActive(!InventoryElements.activeSelf);
         UseText.text = "";
+        if (!InventoryElements.activeSelf) {
+            currentstate = UIstate.Normal;
+        }
     }
 
     public void UseAction() {
@@ -203,7 +209,7 @@ void OpenClickableCanvas(clickableObject c) {
         Button2.SetActive(false);
         Button3.SetActive(true);
         descBG.SetActive(false);
-        
+
     }
     public void CloseAction() {
         UIelements.SetActive(false);
