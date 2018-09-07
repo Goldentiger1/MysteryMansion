@@ -12,11 +12,13 @@ public class PaintingPuzzle : MonoBehaviour {
     }
 
     void Update() {
-        for(int i = 5; i <= paintingsTransforms.Count; i--) {
-            print(paintingsTransforms[i] + " = " + itemsPaintings[i]); // Debug print voi kommentoida pois.
-            Puzzle(paintingsTransforms[i], itemsPaintings[i]);
+        //if (paintingsTransforms) {
+            for (int i = 5; i <= paintingsTransforms.Count; i--) {
+                //print(paintingsTransforms[i] + " = " + itemsPaintings[i]); // Debug print voi kommentoida pois.
+                Puzzle(paintingsTransforms[i], itemsPaintings[i]);
+            }
         }
-    }
+    //}
 
     public void Puzzle(GameObject t, GameObject i) {
         if (t.transform.position == i.transform.position) {
@@ -24,5 +26,12 @@ public class PaintingPuzzle : MonoBehaviour {
         } else {
             print("JOKIN NYT EI OLE OIKEASSA PAIKASSA");
         }
+    }
+
+    public void TransformEmpty(GameObject t, GameObject i) {
+        bool checkOnce = true;
+        //if () {
+
+        //}
     }
 }
