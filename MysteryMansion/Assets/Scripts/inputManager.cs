@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class inputManager : MonoBehaviour {
     
-    public enum UIstate { Normal, InventoryUsing }
+    public enum UIstate { Normal, InventoryUsing, InventoryDragging }
 
     UIstate currentstate;
 
@@ -38,18 +38,23 @@ public class inputManager : MonoBehaviour {
     public Inventory pItems;
 
     public Text description;
+    public Text UseText;
 
     public void InventoryItemSelected(inventoryItem item) {
         currentstate = UIstate.InventoryUsing;
         inventorySelected = item;
         print(item.gameObject.name);
+        UseText.text = ("Use " + item.gameObject.name + " on what?");
     }
 
     void TryUseItem(inventoryItem item, clickableObject co) {
+
         foreach (var useEvent in item.useEvents) {
             //print(useEvent.target.gameObject.name);
             if (useEvent.target == co) {
+                print("Used " + item.gameObject.name + " on " + co.gameObject.name);
                 useEvent.reaction.Invoke();
+                UseText.text = "";
                 return;
             }
         }
@@ -74,6 +79,7 @@ public class inputManager : MonoBehaviour {
         descBG = transform.FindDeepChild("DescImage").gameObject;
         LookImage = transform.FindDeepChild("LookImage").gameObject;
         description = transform.FindDeepChild("Description").GetComponent<Text>();
+        UseText = transform.FindDeepChild("UText").GetComponent<Text>();
         Inventory = transform.FindDeepChild("Inventory").gameObject;
     }
 
@@ -168,6 +174,7 @@ void OpenClickableCanvas(clickableObject c) {
 
     public void InventoryAction() {
         InventoryElements.SetActive(!InventoryElements.activeSelf);
+        UseText.text = "";
     }
 
     public void UseAction() {
