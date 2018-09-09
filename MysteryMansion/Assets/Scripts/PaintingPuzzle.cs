@@ -5,9 +5,10 @@ using UnityEngine;
 public class PaintingPuzzle : MonoBehaviour {
     public List<GameObject> itemsPaintings;
     public List<GameObject> paintingsTransforms;
+    public GameObject tempPainting;
 
     void Start() {
-        itemsPaintings.AddRange(GameObject.FindGameObjectsWithTag("Paintings"));
+        //itemsPaintings.AddRange(GameObject.FindGameObjectsWithTag("Paintings"));
         paintingsTransforms.AddRange(GameObject.FindGameObjectsWithTag("PaintingsPosition"));
     }
 
@@ -30,8 +31,13 @@ public class PaintingPuzzle : MonoBehaviour {
 
     public void TransformEmpty(GameObject t, GameObject i) {
         bool checkOnce = true;
-        //if () {
+        if (GameObject.FindGameObjectsWithTag("Paintings") != null) {
+            itemsPaintings.Add(t);
+        }
+        /*
+        if () {
 
-        //}
+        }
+        */
     }
 }
