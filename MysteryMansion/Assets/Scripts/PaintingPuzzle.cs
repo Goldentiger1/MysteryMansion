@@ -5,20 +5,31 @@ using UnityEngine;
 public class PaintingPuzzle : MonoBehaviour {
     public List<GameObject> itemsPaintings;
     public List<GameObject> paintingsTransforms;
-    public GameObject tempPainting;
+    public List<string> paintingsNames;
+    public int paintingNumber;
+    public int paintingNumberNew;
 
     void Start() {
         //itemsPaintings.AddRange(GameObject.FindGameObjectsWithTag("Paintings"));
         paintingsTransforms.AddRange(GameObject.FindGameObjectsWithTag("PaintingsPosition"));
+        foreach (GameObject g in paintingsTransforms) {
+            if(paintingNumber > 0) {
+                paintingsNames.Add("Painting #" + (paintingNumber));
+                paintingNumber -= 1;
+            } else {
+                break;
+            }
+            
+        }
     }
 
     void Update() {
         //if (paintingsTransforms) {
-            for (int i = 5; i <= paintingsTransforms.Count; i--) {
-                //print(paintingsTransforms[i] + " = " + itemsPaintings[i]); // Debug print voi kommentoida pois.
-                Puzzle(paintingsTransforms[i], itemsPaintings[i]);
-            }
+        for (int i = 5; i <= paintingsTransforms.Count; i--) {
+            //print(paintingsTransforms[i] + " = " + itemsPaintings[i]); // Debug print voi kommentoida pois.
+            Puzzle(paintingsTransforms[i], itemsPaintings[i]);
         }
+    }
     //}
 
     public void Puzzle(GameObject t, GameObject i) {
@@ -29,15 +40,11 @@ public class PaintingPuzzle : MonoBehaviour {
         }
     }
 
-    public void TransformEmpty(GameObject t, GameObject i) {
-        bool checkOnce = true;
-        if (GameObject.FindGameObjectsWithTag("Paintings") != null) {
-            itemsPaintings.Add(t);
-        }
-        /*
-        if () {
+    public void TransformEmpty(int number, int numberNew) {
+        foreach(string name in paintingsNames) {
+            if(GameObject.Find(paintingsNames[number]) && number < numberNew) {
 
+            }
         }
-        */
     }
 }
