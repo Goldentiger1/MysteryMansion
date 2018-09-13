@@ -41,6 +41,11 @@ public class inputManager : MonoBehaviour {
     inventoryItem inventorySelected;
 
 
+    public void InventoryItemDrag(inventoryItem dragItem) {
+        inventorySelected = dragItem;
+        currentstate = UIstate.InventoryDragging;
+    } 
+
     public void InventoryItemSelected(inventoryItem item) {
         currentstate = UIstate.InventoryUsing;
         inventorySelected = item;
@@ -59,6 +64,7 @@ public class inputManager : MonoBehaviour {
                 return;
             }
         }
+        UseText.text = "Nothing happens.";
         print("Nothing happens.");
     }
 
@@ -82,28 +88,51 @@ public class inputManager : MonoBehaviour {
         UseText = transform.FindDeepChild("UText").GetComponent<Text>();
         Inventory = transform.FindDeepChild("Inventory").gameObject;
     }
+    void CheckDragEnd() {
+        bool endDragInput = false;
+        Ray ray = new Ray();
+        if (Input.GetKeyUp(KeyCode.Mouse0)) {
+            endDragInput = true;
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        }
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended) {
+            endDragInput = true;
+            ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        }
+        if (!endDragInput)
+            return;
+        if (endDragInput) {
+            if (currentstate == UIstate.InventoryDragging) {
+                RaycastHit hot;
+                if (Physics.Raycast(ray, out hot, Mathf.Infinity, intObjects)) {
+                    var co = hot.transform.GetComponent<clickableObject>();
+                    TryUseItem(inventorySelected, co);
+                }
+                currentstate = UIstate.Normal;
+            }
+        }
 
+    }
     // Update is called once per frame
     void Update() {
-        bool poke = false;
+        CheckDragEnd();
         Ray ray = new Ray();
+
+        bool poke = false;
         if (Input.GetKeyDown(KeyCode.Mouse0) && !IsPointerOverUIObject(Input.mousePosition)) {
             poke = true;
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            // poke = true?
-            // ray = ...
         }
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && !IsPointerOverUIObject(Input.GetTouch(0).position)) {
             poke = true;
             ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
-            // sama touchille
         }
         if (!poke) {
             return;
         }
-        // reagoidaan pokeen
+
 
 
         RaycastHit hit;
@@ -128,8 +157,6 @@ public class inputManager : MonoBehaviour {
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) {
             player.destination = hit.point;
         }
-
-
     }
 
     private bool IsPointerOverUIObject(Vector2 position) {
@@ -139,10 +166,6 @@ public class inputManager : MonoBehaviour {
         EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
         return results.Count > 0;
     }
-
-    //public void ObjectDescription () {
-    //    description.text = selected.objDescription;
-    //}
 
     void OpenClickableCanvas(clickableObject c) {
         selected = c;
@@ -164,10 +187,6 @@ public class inputManager : MonoBehaviour {
             Button2.SetActive(true);
         } else {
             Button2.SetActive(false);
-            //if (c.pickupPrefab) {
-            //    Button2.SetActive(true);
-            //} else {
-            //    Button2.SetActive(false);
         }
         descBG.SetActive(true);
         Button3.SetActive(false);

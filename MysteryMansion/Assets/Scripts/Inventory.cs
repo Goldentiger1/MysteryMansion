@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour {
     public GameObject buttonPrefab;
 
     void Start() {
-        itemsContainer = GameObject.Find("ItemsContainer").transform;
+        //itemsContainer = GameObject.Find("ItemsContainer").transform;
     }
 
     void Update() {
