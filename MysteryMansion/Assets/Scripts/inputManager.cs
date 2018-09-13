@@ -23,6 +23,7 @@ public class inputManager : MonoBehaviour {
     public GameObject Inventory;
     public GameObject UIelements;
     public GameObject InventoryElements;
+    public GameObject dragIcon;
 
     public Inventory pItems;
 
@@ -38,13 +39,31 @@ public class inputManager : MonoBehaviour {
     public UIstate currentstate;
 
     clickableObject selected;
-    inventoryItem inventorySelected;
+    public inventoryItem inventorySelected;
 
+    public void StartDrag() {
+        //var DISprite = transform.FindDeepChild("InvItemImage").GetComponent<Image>().sprite;
+        currentstate = UIstate.InventoryDragging;
+        dragIcon.GetComponent<Image>().sprite = inventorySelected.itemSprite; //DISprite;
+        dragIcon.SetActive(true);
+    }
 
     public void InventoryItemDrag(inventoryItem dragItem) {
-        inventorySelected = dragItem;
-        currentstate = UIstate.InventoryDragging;
-    } 
+        if (currentstate != UIstate.InventoryDragging) {
+            inventorySelected = dragItem;
+
+            StartDrag();
+        }
+        //dragIcon = dragItem.gameObject;
+
+        //dragIcon = transform.FindDeepChild("InvItemImage").gameObject;
+        //var DISprite = transform.FindDeepChild("InvItemImage").GetComponent<Image>().sprite;
+        //DISprite = dragItem.GetComponent<Image>().sprite;
+        //dragIcon.GetComponent<Image>().sprite = dragItem.GetComponent<Image>().sprite;
+        dragIcon.transform.position = Input.touchCount > 0 ?
+                                            (Vector3)Input.GetTouch(0).position :
+                                            Input.mousePosition;
+    }
 
     public void InventoryItemSelected(inventoryItem item) {
         currentstate = UIstate.InventoryUsing;
@@ -61,15 +80,18 @@ public class inputManager : MonoBehaviour {
                 print("Used " + item.gameObject.name + " on " + co.gameObject.name);
                 useEvent.reaction.Invoke();
                 UseText.text = "";
+                dragIcon.SetActive(false);
                 return;
             }
         }
+        dragIcon.SetActive(false);
         UseText.text = "Nothing happens.";
         print("Nothing happens.");
     }
 
     // Use this for initialization
     void Start() {
+        dragIcon = transform.FindDeepChild("InvItemImage").gameObject;
         InventoryButton = transform.FindDeepChild("InventoryButton").gameObject;
         player = GameObject.Find("Protoplayer").GetComponent<NavMeshAgent>();
         canv = GameObject.FindObjectOfType<Canvas>();
@@ -115,6 +137,13 @@ public class inputManager : MonoBehaviour {
     }
     // Update is called once per frame
     void Update() {
+        if (currentstate == UIstate.InventoryDragging) {
+            if (Input.touchCount > 0) {
+                dragIcon.transform.position = Input.GetTouch(0).position;
+            } else {
+                dragIcon.transform.position = Input.mousePosition;
+            }
+        }
         CheckDragEnd();
         Ray ray = new Ray();
 
