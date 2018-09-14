@@ -25,9 +25,13 @@ public class PaintingPuzzle : MonoBehaviour {
 
     void Update() {
         //if (paintingsTransforms) {
-        for (int i = 5; i <= paintingsTransforms.Count; i--) {
-            //print(paintingsTransforms[i] + " = " + itemsPaintings[i]); // Debug print voi kommentoida pois.
-            Puzzle(paintingsTransforms[i], itemsPaintings[i]);
+        foreach (string name in paintingsNames) {
+            if (GameObject.Find(paintingsNames[paintingNumber]) && paintingNumber < paintingNumberNew) {
+                for (int i = 5; i <= paintingsTransforms.Count; i--) {
+                    //print(paintingsTransforms[i] + " = " + itemsPaintings[i]); // Debug print voi kommentoida pois.
+                    Puzzle(paintingsTransforms[i], itemsPaintings[i]);
+                }
+            }
         }
     }
     //}
@@ -37,14 +41,6 @@ public class PaintingPuzzle : MonoBehaviour {
             print("KAIKKI HYVIN");
         } else {
             print("JOKIN NYT EI OLE OIKEASSA PAIKASSA");
-        }
-    }
-
-    public void TransformEmpty(int number, int numberNew) {
-        foreach(string name in paintingsNames) {
-            if(GameObject.Find(paintingsNames[number]) && number < numberNew) {
-
-            }
         }
     }
 }
