@@ -24,9 +24,14 @@ public class PaintingPuzzle : MonoBehaviour {
     }
 
     void Update() {
-        //if (paintingsTransforms) {
-        foreach (string name in paintingsNames) {
-            if (GameObject.Find(paintingsNames[paintingNumber]) && paintingNumber < paintingNumberNew) {
+        foreach(string name in paintingsNames) {
+            if(GameObject.Find(paintingsNames[paintingNumber])) {
+                itemsPaintings.Add(GameObject.Find(paintingsNames[paintingNumber]));
+                paintingNumberNew = itemsPaintings.Count;
+            }//else if()
+        }
+
+        /*
                 for (int i = 5; i <= paintingsTransforms.Count; i--) {
                     //print(paintingsTransforms[i] + " = " + itemsPaintings[i]); // Debug print voi kommentoida pois.
                     Puzzle(paintingsTransforms[i], itemsPaintings[i]);
@@ -34,7 +39,8 @@ public class PaintingPuzzle : MonoBehaviour {
             }
         }
     }
-    //}
+    */
+    }
 
     public void Puzzle(GameObject t, GameObject i) {
         if (t.transform.position == i.transform.position) {
