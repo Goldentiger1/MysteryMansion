@@ -48,6 +48,7 @@ public class Inventory : MonoBehaviour {
 
     public void Remove(GameObject item) {
         ItemsList.Remove(item);
+        InventoryRefresh();
         //item.SetActive(false);
     }
 

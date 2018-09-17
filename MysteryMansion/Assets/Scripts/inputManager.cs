@@ -79,6 +79,7 @@ public class inputManager : MonoBehaviour {
             if (useEvent.target == co) {
                 print("Used " + item.gameObject.name + " on " + co.gameObject.name);
                 useEvent.reaction.Invoke();
+                pItems.Remove(selected.gameObject);
                 UseText.text = "";
                 dragIcon.SetActive(false);
                 return;
@@ -131,6 +132,7 @@ public class inputManager : MonoBehaviour {
                     TryUseItem(inventorySelected, co);
                 }
                 currentstate = UIstate.Normal;
+                dragIcon.SetActive(false);
             }
         }
 
@@ -235,7 +237,6 @@ public class inputManager : MonoBehaviour {
         print("Used " + selected.gameObject.name);
         selected.useAction.Invoke();
         UIelements.SetActive(false);
-
     }
 
     public void TakeAction() {
