@@ -202,6 +202,7 @@ public class inputManager : MonoBehaviour {
         selected = c;
         description.text = c.objDescription;
         UIelements.SetActive(true);
+        InventoryElements.SetActive(false);
         canv.enabled = true;
         if (c.useActionAvailable) {
             Button.SetActive(true);
@@ -227,6 +228,7 @@ public class inputManager : MonoBehaviour {
 
     public void InventoryAction() {
         InventoryElements.SetActive(!InventoryElements.activeSelf);
+        UIelements.SetActive(false);
         UseText.text = "";
         if (!InventoryElements.activeSelf) {
             currentstate = UIstate.Normal;
