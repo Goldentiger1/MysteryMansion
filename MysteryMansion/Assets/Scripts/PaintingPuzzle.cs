@@ -11,8 +11,8 @@ public class PaintingPuzzle : MonoBehaviour {
     public List<inventoryItem> placedPaintings;
 
     //public List<string> paintingsNames;
-    public int paintingNumber;
-    public int paintingNumberNew;
+    //public int paintingNumber;
+    //public int paintingNumberNew;
 
     void Start() {
         //itemsPaintings.AddRange(GameObject.FindGameObjectsWithTag("Paintings"));
@@ -57,6 +57,9 @@ public class PaintingPuzzle : MonoBehaviour {
                 po.gameObject.SetActive(true);
                 po.transform.position = paintingsTransforms[PosID].position;
                 po.transform.rotation = paintingsTransforms[PosID].rotation;
+                //var poPic = item.GetComponent<Sprite>();
+                //poPic = item.GetComponentInChildren<Sprite>();
+                po.transform.FindDeepChild("New Sprite").GetComponent<SpriteRenderer>().sprite = item.itemSprite;
             }
         }
 
