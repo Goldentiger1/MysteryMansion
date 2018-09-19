@@ -2417,6 +2417,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 114803870051292900, guid: d38d409353c4cda41b11c265706bbd2c,
         type: 2}
+      propertyPath: placedPaintings.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803870051292900, guid: d38d409353c4cda41b11c265706bbd2c,
+        type: 2}
       propertyPath: solutionsPaintings.Array.size
       value: 6
       objectReference: {fileID: 0}
