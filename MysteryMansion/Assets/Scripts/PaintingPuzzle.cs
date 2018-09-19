@@ -9,6 +9,7 @@ public class PaintingPuzzle : MonoBehaviour {
     public List<PaintingObject> paintingVisuals;
 
     public List<inventoryItem> placedPaintings;
+    public List<inventoryItem> solutionsPaintings;
 
     //public List<string> paintingsNames;
     //public int paintingNumber;
@@ -63,7 +64,15 @@ public class PaintingPuzzle : MonoBehaviour {
             }
         }
 
+        bool solved = true;
         // tarkista onko puzzlen ratkaisu oikein
+        for(int i = 0; i <= solutionsPaintings.Count; i++) {
+            if(placedPaintings[PosID] != solutionsPaintings[PosID]) {
+                solved = false;
+                break;
+            }
+
+        }
     }
 
     public void Puzzle(GameObject t, GameObject i) {
