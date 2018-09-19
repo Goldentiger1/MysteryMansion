@@ -72,7 +72,11 @@ public class inputManager : MonoBehaviour {
         UseText.text = ("Use " + item.gameObject.name + " on what?");
     }
 
-    void TryUseItem(inventoryItem item, clickableObject co) {
+    public void Jippo3() {
+        print("Päästään tähän");
+    }
+
+    public void TryUseItem(inventoryItem item, clickableObject co) {
 
         foreach (var useEvent in item.useEvents) {
             //print(useEvent.target.gameObject.name);
