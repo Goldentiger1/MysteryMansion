@@ -11,6 +11,9 @@ public class PaintingPuzzle : MonoBehaviour {
     public List<inventoryItem> placedPaintings;
     public List<inventoryItem> solutionsPaintings;
 
+    inputManager IM;
+    Inventory pItems;
+
     //public List<string> paintingsNames;
     //public int paintingNumber;
     //public int paintingNumberNew;
@@ -48,11 +51,15 @@ public class PaintingPuzzle : MonoBehaviour {
     
 
     public void PaintingInsert(inventoryItem item, int PosID) {
+        
         print("Placing " + item.gameObject.name + " into position " + PosID);
         // merkkaa muistiin sijoitettu objekti oikealle paikalle
         placedPaintings[PosID] = item;
         // käännä itemiä vastaava quad päälle
         // siirrä quad oikean paikan transformin paikalle
+        //IM.currentstate = inputManager.UIstate.Normal;
+        //pItems.Remove(item.gameObject);
+        //IM.TryUseItem(item, PosID);
         foreach (var po in paintingVisuals) {
             if (po.item == item) {
                 po.gameObject.SetActive(true);
@@ -62,24 +69,26 @@ public class PaintingPuzzle : MonoBehaviour {
                 //poPic = item.GetComponentInChildren<Sprite>();
                 po.transform.FindDeepChild("New Sprite").GetComponent<SpriteRenderer>().sprite = item.itemSprite;
             }
+            
         }
 
         bool solved = true;
         // tarkista onko puzzlen ratkaisu oikein
         for(int i = 0; i <= solutionsPaintings.Count; i++) {
-            if(placedPaintings[PosID] != solutionsPaintings[PosID]) {
+            //if(placedPaintings[PosID] != solutionsPaintings[PosID]) {
+            print("Maalaukset seinässä");
                 solved = false;
-                break;
-            }
+               break;
+          //}
 
         }
     }
 
-    public void Puzzle(GameObject t, GameObject i) {
-        if (t.transform.position == i.transform.position) {
-            print("KAIKKI HYVIN");
-        } else {
-            print("JOKIN NYT EI OLE OIKEASSA PAIKASSA");
-        }
-    }
+    //public void Puzzle(GameObject t, GameObject i) {
+    //    if (t.transform.position == i.transform.position) {
+    //        print("KAIKKI HYVIN");
+    //    } else {
+    //        print("JOKIN NYT EI OLE OIKEASSA PAIKASSA");
+    //    }
+    //}
 }
