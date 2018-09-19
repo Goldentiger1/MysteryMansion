@@ -121,6 +121,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 166969594}
     m_Modifications:
+    - target: {fileID: 114803870051292900, guid: d38d409353c4cda41b11c265706bbd2c,
+        type: 2}
+      propertyPath: stairsFixed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4622353606183982, guid: d38d409353c4cda41b11c265706bbd2c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -237,6 +242,22 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114803870051292900, guid: d38d409353c4cda41b11c265706bbd2c,
+        type: 2}
+      propertyPath: stairsFixed.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803870051292900, guid: d38d409353c4cda41b11c265706bbd2c,
+        type: 2}
+      propertyPath: stairsFixed.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114803870051292900, guid: d38d409353c4cda41b11c265706bbd2c,
+        type: 2}
+      propertyPath: stairsFixed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1109691508353528, guid: d38d409353c4cda41b11c265706bbd2c,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d38d409353c4cda41b11c265706bbd2c, type: 2}
   m_IsPrefabAsset: 0
