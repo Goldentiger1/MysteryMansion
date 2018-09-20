@@ -26,7 +26,7 @@ public class PaintingPosition : MonoBehaviour {
         puzzle.PaintingInsert(invItem, PaintPositionID);
     }
 
-    public void PaintingRemove (inventoryItem invItem) {
-        puzzle.PaintingRemove(invItem, PaintPositionID);
-    }
+    //public void PaintingRemove (inventoryItem invItem) {
+    //    puzzle.PaintingRemove(invItem, PaintPositionID);
+    //}
 }

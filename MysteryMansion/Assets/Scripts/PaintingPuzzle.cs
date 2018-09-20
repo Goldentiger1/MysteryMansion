@@ -40,9 +40,10 @@ public class PaintingPuzzle : MonoBehaviour {
      
     }
 
-    public void PaintingRemove(inventoryItem item, int PosID) {
-        print("Removing " + item.gameObject.name + " from position " + PosID);
-        placedPaintings[PosID] = null;
+    public void PaintingRemove(inventoryItem item) {
+       // print("Removing " + item.gameObject.name + " from position " + PosID);
+        //placedPaintings[] = null;
+        //placedPaintings.
     }
 
     public void PaintingInsert(inventoryItem item, int PosID) {
