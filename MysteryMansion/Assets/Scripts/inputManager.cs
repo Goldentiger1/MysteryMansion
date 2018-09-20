@@ -247,6 +247,9 @@ public class inputManager : MonoBehaviour {
 
     public void TakeAction() {
         print("Took " + selected.gameObject.name);
+        if (selected.name == "Painting") {
+      
+        }
         selected.takeAction.Invoke();
         UIelements.SetActive(false);
         pItems.Pickup(selected.pickupPrefab);
