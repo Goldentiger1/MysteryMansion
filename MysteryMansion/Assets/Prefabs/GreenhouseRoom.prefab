@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 65577874823454402}
   - component: {fileID: 114990183682355598}
   m_Layer: 9
-  m_Name: Teleport
+  m_Name: Teleport (FromLobby)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 65445564853437698}
   - component: {fileID: 114146031120601234}
   m_Layer: 9
-  m_Name: Teleport (1)
+  m_Name: Teleport (ToLobby)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,7 +290,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1702595249217606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.204178, y: 2.4, z: -5.8836613}
+  m_LocalPosition: {x: -38.9, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4934859365939118}
@@ -311,7 +311,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316442700070530}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.88, y: -0.03, z: 2.99}
+  m_LocalPosition: {x: 3.06, y: -0.03, z: 2.99}
   m_LocalScale: {x: 1, y: 1, z: 0.31000012}
   m_Children: []
   m_Father: {fileID: 4300201460563470}
