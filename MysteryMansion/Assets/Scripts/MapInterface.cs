@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class MapInterface : MonoBehaviour {
     public GameObject map;
-    public List<Image> roomsImages = new List<Image>();
+    public List<GameObject> roomsImages = new List<GameObject>();
 
     void Start() {
-        
+        map = GameObject.Find("Map");
     }
 
     public void RoomChange(Image room) {
