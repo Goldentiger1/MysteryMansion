@@ -11,6 +11,7 @@ public class inputManager : MonoBehaviour {
 
     public Canvas canv;
 
+
     public enum UIstate { Normal, InventoryUsing, InventoryDragging }
 
     public GameObject Button;
@@ -30,13 +31,16 @@ public class inputManager : MonoBehaviour {
     public LayerMask ground;
     public LayerMask intObjects;
     public LayerMask UI;
+    public LayerMask teleport;
 
     public NavMeshAgent player;
 
     public Text description;
     public Text UseText;
 
+
     public UIstate currentstate;
+
 
     clickableObject selected;
     public inventoryItem inventorySelected;
@@ -70,10 +74,6 @@ public class inputManager : MonoBehaviour {
         inventorySelected = item;
         print(item.gameObject.name);
         UseText.text = ("Use " + item.gameObject.name + " on what?");
-    }
-
-    public void Jippo3() {
-        print("Päästään tähän");
     }
 
     public void TryUseItem(inventoryItem item, clickableObject co) {
@@ -189,7 +189,7 @@ public class inputManager : MonoBehaviour {
             InventoryElements.SetActive(false);
         }
 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground)) {
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground | teleport)) {
             player.destination = hit.point;
         }
     }

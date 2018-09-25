@@ -41,18 +41,20 @@ public class PaintingPuzzle : MonoBehaviour {
     }
 
     public void PaintingRemove(inventoryItem item) {
-       // print("Removing " + item.gameObject.name + " from position " + PosID);
+        // print("Removing " + item.gameObject.name + " from position " + PosID);
         //placedPaintings[] = null;
         //placedPaintings.
+        var index = placedPaintings.IndexOf(item);
+        placedPaintings[index] = null;
     }
 
     public void PaintingInsert(inventoryItem item, int PosID) {
 
         print("Placing " + item.gameObject.name + " into position " + PosID);
         // merkkaa muistiin sijoitettu objekti oikealle paikalle
-        if (placedPaintings[PosID])
+        if (placedPaintings[PosID]) 
             Debug.LogError("TODO: handle placing painting on top of existing");
-
+        
         placedPaintings[PosID] = item;
         // käännä itemiä vastaava quad päälle
         // siirrä quad oikean paikan transformin paikalle
