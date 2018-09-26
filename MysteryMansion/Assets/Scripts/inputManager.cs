@@ -206,6 +206,7 @@ public class inputManager : MonoBehaviour {
         selected = c;
         description.text = c.objDescription;
         UIelements.SetActive(true);
+        //UIelements.transform.position = selected.transform.position;
         InventoryElements.SetActive(false);
         canv.enabled = true;
         if (c.useActionAvailable) {

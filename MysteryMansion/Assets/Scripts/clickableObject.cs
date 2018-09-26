@@ -35,13 +35,13 @@ public class clickableObject : MonoBehaviour {
 
     // Use this for initialization
 
-    //private void OnMouseEnter() {
-    //    Cursor.SetCursor(cursorUse, hotSpot, cursormode);
-    //}
+    private void OnMouseEnter() {
+        Cursor.SetCursor(cursorUse, hotSpot, cursormode);
+    }
 
-    //private void OnMouseExit() {
-    //    Cursor.SetCursor(null, Vector2.zero, cursormode);
-    //}
+    private void OnMouseExit() {
+        Cursor.SetCursor(null, Vector2.zero, cursormode);
+    }
 
     void Start() {
     }
