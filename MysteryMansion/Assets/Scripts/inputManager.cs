@@ -11,6 +11,7 @@ public class inputManager : MonoBehaviour {
 
     public Canvas canv;
 
+    public CursorMode cursorMode;
 
     public enum UIstate { Normal, InventoryUsing, InventoryDragging }
 
@@ -38,8 +39,11 @@ public class inputManager : MonoBehaviour {
     public Text description;
     public Text UseText;
 
+    public Texture2D cursNormal;
 
     public UIstate currentstate;
+
+    public Vector2 hotSpot;
 
 
     clickableObject selected;
@@ -96,6 +100,7 @@ public class inputManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        Cursor.SetCursor(cursNormal, hotSpot, cursorMode);
         dragIcon = transform.FindDeepChild("InvItemImage").gameObject;
         InventoryButton = transform.FindDeepChild("InventoryButton").gameObject;
         player = GameObject.Find("Protoplayer").GetComponent<NavMeshAgent>();

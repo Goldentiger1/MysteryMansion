@@ -23,6 +23,7 @@ public class clickableObject : MonoBehaviour {
     public Sprite lookImage;
 
     public Texture2D cursorUse;
+    public Texture2D cursorNormal;
 
     public UnityEvent useAction;
     public UnityEvent takeAction;
@@ -40,7 +41,7 @@ public class clickableObject : MonoBehaviour {
     }
 
     private void OnMouseExit() {
-        Cursor.SetCursor(null, Vector2.zero, cursormode);
+        Cursor.SetCursor(cursorNormal, hotSpot, cursormode);
     }
 
     void Start() {
