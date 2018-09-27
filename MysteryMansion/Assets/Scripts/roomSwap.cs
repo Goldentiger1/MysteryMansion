@@ -62,7 +62,7 @@ public class roomSwap : MonoBehaviour {
             //mainCam.enabled = false;
             //bgCam.enabled = false;
             //nextMainCam.enabled = true;
-           //nextBgCam.enabled = true;
+            //nextBgCam.enabled = true;
             //var camOff = Scene.FindObjectOfType<Camera>().enabled = false;
             }
         }
