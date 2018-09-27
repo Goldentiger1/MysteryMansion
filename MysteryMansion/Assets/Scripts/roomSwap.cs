@@ -20,6 +20,7 @@ public class roomSwap : MonoBehaviour {
     public LayerMask rooms;
 
     public Texture2D cursorWalk;
+    public Texture2D cursorNormal;
 
     RoomData room;
 
@@ -49,7 +50,7 @@ public class roomSwap : MonoBehaviour {
     }
 
     private void OnMouseExit() {
-        Cursor.SetCursor(null, Vector2.zero, cursorMode);
+        Cursor.SetCursor(cursorNormal, hotSpot, cursorMode);
     }
 
     private void OnTriggerEnter(Collider other) {
