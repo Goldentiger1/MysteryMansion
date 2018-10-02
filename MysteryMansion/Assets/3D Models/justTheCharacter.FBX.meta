@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: d5894bdfe2e52b74c93f2878342a0beb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: BoneCollarL
+    100004: BoneCollarR
+    100006: BoneElbowL
+    100008: BoneElbowR
+    100010: BoneFingerL1
+    100012: BoneFingerL2
+    100014: BoneFingerLEnd
+    100016: BoneFingerR1
+    100018: BoneFingerR2
+    100020: BoneFingerREnd
+    100022: BoneFootL
+    100024: BoneFootR
+    100026: BoneHead
+    100028: BoneKneeL
+    100030: BoneKneeR
+    100032: BoneNeck
+    100034: BoneShoulderL
+    100036: BoneShoulderR
+    100038: BoneSpine 2
+    100040: BoneSpine 3
+    100042: BoneSpine1
+    100044: BoneSpineEnd
+    100046: BoneThighL
+    100048: BoneThighR
+    100050: BoneToeL
+    100052: BoneToeR
+    100054: BoneWristL
+    100056: BoneWristR
+    100058: ControlAnkleL
+    100060: ControlAnkleR
+    100062: ControlCollarL
+    100064: ControlCollarR
+    100066: ControlElbowL
+    100068: ControlElbowR
+    100070: ControlFingerL
+    100072: ControlFingerR
+    100074: ControlHead
+    100076: ControlIKL
+    100078: ControlIKR
+    100080: ControlKnuckleL
+    100082: ControlKnuckleR
+    100084: ControlNeck
+    100086: ControlShoulderL
+    100088: ControlShoulderR
+    100090: ControlSpine1
+    100092: ControlSpine2
+    100094: ControlSpine3
+    100096: ControlWristL
+    100098: ControlWristR
+    100100: Hair
+    100102: //RootNode
+    400000: Body
+    400002: BoneCollarL
+    400004: BoneCollarR
+    400006: BoneElbowL
+    400008: BoneElbowR
+    400010: BoneFingerL1
+    400012: BoneFingerL2
+    400014: BoneFingerLEnd
+    400016: BoneFingerR1
+    400018: BoneFingerR2
+    400020: BoneFingerREnd
+    400022: BoneFootL
+    400024: BoneFootR
+    400026: BoneHead
+    400028: BoneKneeL
+    400030: BoneKneeR
+    400032: BoneNeck
+    400034: BoneShoulderL
+    400036: BoneShoulderR
+    400038: BoneSpine 2
+    400040: BoneSpine 3
+    400042: BoneSpine1
+    400044: BoneSpineEnd
+    400046: BoneThighL
+    400048: BoneThighR
+    400050: BoneToeL
+    400052: BoneToeR
+    400054: BoneWristL
+    400056: BoneWristR
+    400058: ControlAnkleL
+    400060: ControlAnkleR
+    400062: ControlCollarL
+    400064: ControlCollarR
+    400066: ControlElbowL
+    400068: ControlElbowR
+    400070: ControlFingerL
+    400072: ControlFingerR
+    400074: ControlHead
+    400076: ControlIKL
+    400078: ControlIKR
+    400080: ControlKnuckleL
+    400082: ControlKnuckleR
+    400084: ControlNeck
+    400086: ControlShoulderL
+    400088: ControlShoulderR
+    400090: ControlSpine1
+    400092: ControlSpine2
+    400094: ControlSpine3
+    400096: ControlWristL
+    400098: ControlWristR
+    400100: Hair
+    400102: //RootNode
+    2100000: 'Material #28'
+    2100002: No Name
+    2300000: Hair
+    3300000: Hair
+    4300000: Body
+    4300002: Hair
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Body
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
