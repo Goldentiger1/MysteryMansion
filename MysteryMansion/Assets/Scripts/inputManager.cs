@@ -26,6 +26,7 @@ public class inputManager : MonoBehaviour {
     public GameObject UIelements;
     public GameObject InventoryElements;
     public GameObject dragIcon;
+    public GameObject HapImage;
 
     public Inventory pItems;
 
@@ -38,6 +39,7 @@ public class inputManager : MonoBehaviour {
 
     public Text description;
     public Text UseText;
+    public Text hapText;
 
     public Texture2D cursNormal;
 
@@ -116,9 +118,11 @@ public class inputManager : MonoBehaviour {
         Button3 = transform.FindDeepChild("CloseButton").gameObject;
         descBG = transform.FindDeepChild("DescImage").gameObject;
         LookImage = transform.FindDeepChild("LookImage").gameObject;
+        HapImage = transform.FindDeepChild("HapImage").gameObject;
         description = transform.FindDeepChild("Description").GetComponent<Text>();
         UseText = transform.FindDeepChild("UText").GetComponent<Text>();
         Inventory = transform.FindDeepChild("Inventory").gameObject;
+        hapText = transform.FindDeepChild("HapText").GetComponent<Text>();
     }
     void CheckDragEnd() {
         bool endDragInput = false;
@@ -233,6 +237,7 @@ public class inputManager : MonoBehaviour {
         descBG.SetActive(true);
         Button3.SetActive(false);
         LookImage.SetActive(false);
+        HapImage.SetActive(false);
 
     }
 
@@ -247,8 +252,8 @@ public class inputManager : MonoBehaviour {
 
     public void UseAction() {
         print("Used " + selected.gameObject.name);
-        selected.useAction.Invoke();
         UIelements.SetActive(false);
+        selected.useAction.Invoke();
     }
 
     public void TakeAction() {
@@ -275,6 +280,16 @@ public class inputManager : MonoBehaviour {
     public void CloseAction() {
         UIelements.SetActive(false);
         Button3.SetActive(false);
+    }
+    public void HapAction() {
+        UIelements.SetActive(true);
+        InventoryElements.SetActive(false);
+        descBG.SetActive(false);
+        Button.SetActive(false);
+        Button1.SetActive(false);
+        Button2.SetActive(false);
+        Button3.SetActive(false);
+        HapImage.SetActive(true);
     }
 }
 
