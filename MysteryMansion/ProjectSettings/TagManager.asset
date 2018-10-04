@@ -8,6 +8,7 @@ TagManager:
   - Inventory
   - Paintings
   - PaintingsPosition
+  - OseSpecial
   layers:
   - Default
   - TransparentFX

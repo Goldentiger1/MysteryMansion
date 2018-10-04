@@ -7,6 +7,12 @@ public class DoorPuzzle : MonoBehaviour {
     public bool boardsDestroyed = false;
     public bool lockOpened = false;
 
+    public GameObject FinalTeleport;
+
+    public void Start() {
+        FinalTeleport.SetActive(false);
+    }
+
     public void Boards() {
         boardsDestroyed = true;
     }
@@ -18,6 +24,7 @@ public class DoorPuzzle : MonoBehaviour {
     public void Update() {
         if (boardsDestroyed && lockOpened) {
             Destroy(GameObject.Find("DoorPuzzler"));
+            FinalTeleport.SetActive(true);
         }
     }
 }

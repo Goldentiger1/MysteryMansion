@@ -10,6 +10,10 @@ public class pianoFunction : MonoBehaviour {
     public bool PianoCard1 = false;
     public bool PianoCard2 = false;
 
+    public GameObject Pianokey;
+    public Sprite FireClose;
+    public Sprite FireOpen;
+
     public void PianoRegi() {
         IM.HapAction();
         if (PianoReg) {
@@ -18,6 +22,9 @@ public class pianoFunction : MonoBehaviour {
             IM.hapText.text = "The note  still doesn't sound quite right.";
         } else if (PianoCard2) {
             IM.hapText.text = "The note sounds in tune with the music box, and the fireplace has opened";
+            Pianokey.SetActive(true);
+            GameObject.FindGameObjectWithTag("OseSpecial").gameObject.GetComponent<SpriteRenderer>().sprite = FireOpen;
+            //FireClose = FireOpen;
         }
 
     }
@@ -30,6 +37,10 @@ public class pianoFunction : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        FireClose = GameObject.FindGameObjectWithTag("OseSpecial").gameObject.GetComponent<SpriteRenderer>().sprite;
+        //FireOpen = transform.FindDeepChild("Takka").gameObject.GetComponent<SpriteRenderer>().sprite;
+
+        Pianokey.SetActive(false);
         IM = GameObject.FindObjectOfType<inputManager>();
 	}
 	

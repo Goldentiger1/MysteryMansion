@@ -34,6 +34,7 @@ public class PaintingPuzzle : MonoBehaviour {
         //        break;
         //    }
         //}
+        IM = GameObject.FindObjectOfType<inputManager>();
     }
 
     void Update() {
@@ -80,6 +81,8 @@ public class PaintingPuzzle : MonoBehaviour {
         if (!solv && solved) {
             solv = true;
             puzzleComplete.Invoke();
+            IM.HapAction();
+            IM.hapText.text = "I heard a click and some rumbling coming from the lobby!";
         }
     }
 }
