@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DoorPuzzle : MonoBehaviour {
 
+    public Sprite FinalOpen;
+
     public bool boardsDestroyed = false;
     public bool lockOpened = false;
 
@@ -25,6 +27,8 @@ public class DoorPuzzle : MonoBehaviour {
         if (boardsDestroyed && lockOpened) {
             Destroy(GameObject.Find("DoorPuzzler"));
             FinalTeleport.SetActive(true);
+            GameObject.FindGameObjectWithTag("LastDoor").gameObject.GetComponent<SpriteRenderer>().sprite = FinalOpen;
+
         }
     }
 }

@@ -35,6 +35,12 @@ public class pianoFunction : MonoBehaviour {
         PianoCard2 = false;
     }
 
+    public void MusicCard2() {
+        PianoReg = false;
+        PianoCard1 = false;
+        PianoCard2 = true;
+    }
+
 	// Use this for initialization
 	void Start () {
         FireClose = GameObject.FindGameObjectWithTag("OseSpecial").gameObject.GetComponent<SpriteRenderer>().sprite;
