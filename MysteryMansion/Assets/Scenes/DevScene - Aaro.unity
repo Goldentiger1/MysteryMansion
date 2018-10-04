@@ -2345,6 +2345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boardsDestroyed: 0
   lockOpened: 0
+  FinalTeleport: {fileID: 0}
 --- !u!1 &270492502
 GameObject:
   m_ObjectHideFlags: 0
@@ -13448,6 +13449,9 @@ MonoBehaviour:
   PianoReg: 1
   PianoCard1: 0
   PianoCard2: 0
+  Pianokey: {fileID: 0}
+  FireClose: {fileID: 0}
+  FireOpen: {fileID: 0}
 --- !u!65 &1461448252
 BoxCollider:
   m_ObjectHideFlags: 0
