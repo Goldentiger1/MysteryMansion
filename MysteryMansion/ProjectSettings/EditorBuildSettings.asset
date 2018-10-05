@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/DevScene - Aaro.unity
-    guid: d4119b8e40b06644c8d0acb0b47973a4
   - enabled: 1
-    path: Assets/Scenes/DevScene - Ose.unity
-    guid: 8579b27a0e944c643bbbb57d70de27fe
+    path: Assets/Scenes/MainMenu.unity
+    guid: 6e5b0de230d886d45a680ac7d53da7a2
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: 92246c307ce3b6a42a9713e792760ab5
   m_configObjects: {}

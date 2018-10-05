@@ -6,6 +6,8 @@ using UnityEngine.AI;
 
 public class roomSwap : MonoBehaviour {
 
+    public CursorMode cursorMode = CursorMode.Auto;
+
     public NavMeshAgent playerNav;
 
     public Transform destination;
@@ -16,7 +18,13 @@ public class roomSwap : MonoBehaviour {
     //public Camera nextBgCam;
 
     public LayerMask rooms;
+
+    public Texture2D cursorWalk;
+    public Texture2D cursorNormal;
+
     RoomData room;
+
+    public Vector2 hotSpot;
 
     //public List<Camera> cameras;
 
@@ -37,6 +45,14 @@ public class roomSwap : MonoBehaviour {
     void Update() {
     }
 
+    private void OnMouseEnter() {
+        Cursor.SetCursor(cursorWalk, hotSpot, cursorMode);
+    }
+
+    private void OnMouseExit() {
+        Cursor.SetCursor(cursorNormal, hotSpot, cursorMode);
+    }
+
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.layer == LayerMask.NameToLayer("Player")) {
                 playerNav.Warp(destination.position);
@@ -46,7 +62,7 @@ public class roomSwap : MonoBehaviour {
             //mainCam.enabled = false;
             //bgCam.enabled = false;
             //nextMainCam.enabled = true;
-           //nextBgCam.enabled = true;
+            //nextBgCam.enabled = true;
             //var camOff = Scene.FindObjectOfType<Camera>().enabled = false;
             }
         }

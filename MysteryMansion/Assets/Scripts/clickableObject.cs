@@ -14,20 +14,37 @@ public class clickableObject : MonoBehaviour {
     public bool takeActionAvailable;
     public bool lookActionAvailable;
 
+    public CursorMode cursormode = CursorMode.Auto;
+
     public string objDescription;
 
     public GameObject pickupPrefab;
 
     public Sprite lookImage;
 
+    public Texture2D cursorUse;
+    public Texture2D cursorNormal;
+
     public UnityEvent useAction;
     public UnityEvent takeAction;
     public UnityEvent lookAction;
 
-    
+    public Vector2 hotSpot;
+
+    inputManager IM;
+
 
     // Use this for initialization
-    void Start() { 
+
+    private void OnMouseEnter() {
+        Cursor.SetCursor(cursorUse, hotSpot, cursormode);
+    }
+
+    private void OnMouseExit() {
+        Cursor.SetCursor(cursorNormal, hotSpot, cursormode);
+    }
+
+    void Start() {
     }
     //canv = GameObject.FindObjectOfType<Canvas>();
     //canv.enabled = false;

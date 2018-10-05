@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Background Camera
   - Inventory
+  - Paintings
+  - PaintingsPosition
+  - OseSpecial
+  - LastDoor
   layers:
   - Default
   - TransparentFX
@@ -23,8 +27,8 @@ TagManager:
   - Items
   - Rooms
   - IntObjects
-  - 
-  - 
+  - Teleports
+  - Extra
   - 
   - 
   - 
