@@ -8,12 +8,13 @@ using UnityEngine.UI;
 
 public class inputManager : MonoBehaviour {
 
+    public Animator CharAnim;
 
     public Canvas canv;
 
     public CursorMode cursorMode;
 
-    public enum UIstate { Normal, InventoryUsing, InventoryDragging }
+    public enum UIstate { Normal, InventoryUsing, InventoryDragging, Walking }
 
     public GameObject Button;
     public GameObject Button1;
@@ -47,6 +48,7 @@ public class inputManager : MonoBehaviour {
 
     public Vector2 hotSpot;
 
+    Quaternion normalLookRotation;
 
     clickableObject selected;
     public inventoryItem inventorySelected;
@@ -152,6 +154,20 @@ public class inputManager : MonoBehaviour {
     }
     // Update is called once per frame
     void Update() {
+
+        if (currentstate == UIstate.Normal) {
+            CharAnim.Play("Idle");
+            player.transform.rotation = Quaternion.RotateTowards(player.transform.rotation, normalLookRotation, Time.deltaTime * 200);
+        }
+
+        if (currentstate == UIstate.Walking) {
+            CharAnim.Play("Walk");
+            if (Vector3.Distance (player.destination, player.transform.position) <= 1) {
+                normalLookRotation = player.transform.rotation;
+                currentstate = UIstate.Normal;
+            }
+        }
+
         if (currentstate == UIstate.InventoryDragging) {
             if (Input.touchCount > 0) {
                 dragIcon.transform.position = Input.GetTouch(0).position;
@@ -184,25 +200,31 @@ public class inputManager : MonoBehaviour {
             var co = hit.transform.GetComponent<clickableObject>();
             //print("Osui");
             if (co) {
+                currentstate = UIstate.Normal;
                 if (currentstate == UIstate.InventoryUsing) {
                     TryUseItem(inventorySelected, co);
-                    currentstate = UIstate.Normal;
                 } else {
-                    player.transform.LookAt(co.transform, Vector3.zero);
+                    player.enabled = false;
+                    var target = co.transform.position;
+                    target.y = player.transform.position.y;
+                    //player.transform.LookAt(target, Vector3.up);
+                    normalLookRotation = Quaternion.LookRotation(target - player.transform.position, Vector3.up);
+
+                    // player.enabled = true;
                     OpenClickableCanvas(co);
                 }
             }
-        } else if (canv.enabled || InventoryElements) {
-            currentstate = UIstate.Normal;
-
+        } else if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground | teleport)) {
+            player.enabled = true;
+            currentstate = UIstate.Walking;
+            player.destination = hit.point;
+            //currentstate = UIstate.Normal;
             UIelements.SetActive(false);
             InventoryElements.SetActive(false);
         }
+        //if (canv.enabled || InventoryElements) {
+        //}
 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground | teleport)) {
-            player.transform.LookAt(hit.transform);
-            player.destination = hit.point;
-        }
     }
 
     private bool IsPointerOverUIObject(Vector2 position) {
