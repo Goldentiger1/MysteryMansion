@@ -4613,7 +4613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useActionAvailable: 0
   takeActionAvailable: 1
-  lookActionAvailable: 1
+  lookActionAvailable: 0
   cursormode: 0
   objDescription: An old painting. I wonder who left it here?
   pickupPrefab: {fileID: 458794102}
@@ -6614,7 +6614,7 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   cursormode: 0
-  objDescription: A crappy old sheet of notes.
+  objDescription: A musical card to use in a music box, if I can find one...
   pickupPrefab: {fileID: 621497429}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
@@ -6955,102 +6955,6 @@ Transform:
   m_Father: {fileID: 1541469184}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &469414207
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 469414208}
-  - component: {fileID: 469414210}
-  - component: {fileID: 469414209}
-  - component: {fileID: 469414211}
-  m_Layer: 15
-  m_Name: LadderSpot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &469414208
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 469414207}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.25, y: 0, z: 0.49}
-  m_LocalScale: {x: 1, y: 0.12, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1997128804}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &469414209
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 469414207}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &469414210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 469414207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ab6bf25adb30cb4f93b9a624b487d70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useActionAvailable: 0
-  takeActionAvailable: 0
-  lookActionAvailable: 0
-  cursormode: 0
-  objDescription: Maybe if I had a stepladder here?
-  pickupPrefab: {fileID: 0}
-  lookImage: {fileID: 0}
-  cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  useAction:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  takeAction:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  lookAction:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  hotSpot: {x: 0, y: 0}
---- !u!114 &469414211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 469414207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6d799d40a24ac44b100a3aab218191, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LadderVisual:
-  - {fileID: 1901791028}
-  LadderPosit:
-  - {fileID: 498399946}
-  placedLadder:
-  - {fileID: 0}
 --- !u!1 &476146713
 GameObject:
   m_ObjectHideFlags: 0
@@ -7445,61 +7349,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496337472}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &498399945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 498399946}
-  - component: {fileID: 498399947}
-  - component: {fileID: 498399948}
-  m_Layer: 15
-  m_Name: LadderPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &498399946
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 498399945}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.25, y: 0, z: 0.49}
-  m_LocalScale: {x: 1, y: 0.12, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1997128804}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &498399947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 498399945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d4ff53184fddf3478c6d315d9783cb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LadderPosID: 0
-  spot: {fileID: 469414211}
---- !u!65 &498399948
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 498399945}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &499032146
 GameObject:
   m_ObjectHideFlags: 0
@@ -7765,10 +7614,10 @@ BoxCollider:
   m_GameObject: {fileID: 507236393}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.06, y: 1.3, z: 0.9}
-  m_Center: {x: 0, y: 0.25, z: -0.19}
+  m_Size: {x: 0.3, y: 5, z: 1}
+  m_Center: {x: 0, y: -1.28, z: -0.1}
 --- !u!114 &507236396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9667,6 +9516,61 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 708411849}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &719629235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 719629236}
+  - component: {fileID: 719629238}
+  - component: {fileID: 719629237}
+  m_Layer: 15
+  m_Name: LadderPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &719629236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719629235}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.2500014, y: 1.18, z: 0.20000029}
+  m_LocalScale: {x: 1, y: 0.12, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1997128804}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &719629237
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719629235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 20, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &719629238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719629235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4ff53184fddf3478c6d315d9783cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LadderPosID: 0
+  spot: {fileID: 1759291014}
 --- !u!1 &728580108
 GameObject:
   m_ObjectHideFlags: 0
@@ -10086,7 +9990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useActionAvailable: 0
   takeActionAvailable: 1
-  lookActionAvailable: 1
+  lookActionAvailable: 0
   cursormode: 0
   objDescription: A little-less sturdy looking ladder.
   pickupPrefab: {fileID: 1345948546}
@@ -14584,9 +14488,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useActionAvailable: 0
   takeActionAvailable: 0
-  lookActionAvailable: 1
+  lookActionAvailable: 0
   cursormode: 0
-  objDescription: An old-ass music box. Wonder if it works?
+  objDescription: "It\u2019s one of those old-fashioned music boxes! Wonder if it\u2019ll
+    still play a tune?"
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 910240782eb89d749aa916e7b90ed7fa, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
@@ -16361,11 +16266,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: b9e3009281d36334f8bb1e362e9806df, type: 3}
   useEvents:
-  - target: {fileID: 469414210}
+  - target: {fileID: 0}
     reaction:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 498399947}
+        - m_Target: {fileID: 719629238}
           m_MethodName: PlaceLadder
           m_Mode: 2
           m_Arguments:
@@ -16398,7 +16303,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 469414209}
+        - m_Target: {fileID: 507236395}
           m_MethodName: set_enabled
           m_Mode: 6
           m_Arguments:
@@ -16407,7 +16312,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -17512,7 +17417,7 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   cursormode: 0
-  objDescription: A musical note card
+  objDescription: A musical card to use in a music box, if I can find one...
   pickupPrefab: {fileID: 1505210468}
   lookImage: {fileID: 21300000, guid: a63ee38bc88f2684fb5d9a58f4342ce8, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
@@ -19599,9 +19504,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useActionAvailable: 0
   takeActionAvailable: 0
-  lookActionAvailable: 1
+  lookActionAvailable: 0
   cursormode: 0
-  objDescription: I need to destroy these planks.
+  objDescription: These planks are keeping the door shut.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 5da4064608f51274a8d2840f51f32ca8, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
@@ -21192,8 +21097,104 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   cursormode: 0
-  objDescription: 
+  objDescription: A beautiful silver key.
   pickupPrefab: {fileID: 804714077}
+  lookImage: {fileID: 0}
+  cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  useAction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  takeAction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  lookAction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hotSpot: {x: 0, y: 0}
+--- !u!1 &1759291012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759291013}
+  - component: {fileID: 1759291016}
+  - component: {fileID: 1759291015}
+  - component: {fileID: 1759291014}
+  m_Layer: 15
+  m_Name: LadderSpot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1759291013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759291012}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.250001, y: 1.19, z: 0.15999913}
+  m_LocalScale: {x: 1.0000002, y: 0.12, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 1997128804}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1759291014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759291012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6d799d40a24ac44b100a3aab218191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LadderVisual:
+  - {fileID: 1901791028}
+  LadderPosit:
+  - {fileID: 719629236}
+  placedLadder:
+  - {fileID: 0}
+--- !u!65 &1759291015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759291012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 20, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1759291016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759291012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab6bf25adb30cb4f93b9a624b487d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useActionAvailable: 0
+  takeActionAvailable: 0
+  lookActionAvailable: 0
+  cursormode: 0
+  objDescription: Maybe if I had something to climb higher?
+  pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
   cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
@@ -21942,7 +21943,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   cursormode: 0
-  objDescription: A creaky old piano.
+  objDescription: A creaky old piano. Seems to still be functional. I wonder if I
+    can play it...
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
@@ -22700,9 +22702,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useActionAvailable: 0
   takeActionAvailable: 0
-  lookActionAvailable: 1
+  lookActionAvailable: 0
   cursormode: 0
-  objDescription: An old-ass music box. Wonder if it works?
+  objDescription: "It\u2019s one of those old-fashioned music boxes! Wonder if it\u2019ll
+    still play a tune?"
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 910240782eb89d749aa916e7b90ed7fa, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
@@ -23311,9 +23314,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 498399946}
+  - {fileID: 719629236}
   - {fileID: 1901791027}
-  - {fileID: 469414208}
+  - {fileID: 1759291013}
   - {fileID: 1375316245}
   - {fileID: 89321881}
   m_Father: {fileID: 698494006}
