@@ -188,6 +188,7 @@ public class inputManager : MonoBehaviour {
                     TryUseItem(inventorySelected, co);
                     currentstate = UIstate.Normal;
                 } else {
+                    player.transform.LookAt(co.transform, Vector3.zero);
                     OpenClickableCanvas(co);
                 }
             }
@@ -199,6 +200,7 @@ public class inputManager : MonoBehaviour {
         }
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground | teleport)) {
+            player.transform.LookAt(hit.transform);
             player.destination = hit.point;
         }
     }
