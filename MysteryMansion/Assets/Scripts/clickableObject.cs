@@ -33,7 +33,9 @@ public class clickableObject : MonoBehaviour {
 
     inputManager IM;
 
-
+    public void DisableUseAction() {
+        useActionAvailable = false;
+    }
     // Use this for initialization
 
     private void OnMouseEnter() {

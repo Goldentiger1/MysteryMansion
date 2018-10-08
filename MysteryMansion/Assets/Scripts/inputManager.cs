@@ -79,6 +79,7 @@ public class inputManager : MonoBehaviour {
 
     public void InventoryItemSelected(inventoryItem item) {
         currentstate = UIstate.InventoryUsing;
+        CharAnim.Play("Idle");
         inventorySelected = item;
         print(item.gameObject.name);
         UseText.text = ("Use " + item.gameObject.name + " on what?");
@@ -104,6 +105,7 @@ public class inputManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        //Fabric.EventManager.Instance.PostEvent("MainMusic");
         Cursor.SetCursor(cursNormal, hotSpot, cursorMode);
         dragIcon = transform.FindDeepChild("InvItemImage").gameObject;
         InventoryButton = transform.FindDeepChild("InventoryButton").gameObject;
@@ -125,8 +127,13 @@ public class inputManager : MonoBehaviour {
         UseText = transform.FindDeepChild("UText").GetComponent<Text>();
         Inventory = transform.FindDeepChild("Inventory").gameObject;
         hapText = transform.FindDeepChild("HapText").GetComponent<Text>();
+        HapAction();
+        hapText.text = "You have just entered the Mystery Mansion. What secrets will you uncover?";
     }
     void CheckDragEnd() {
+        if (currentstate != UIstate.InventoryDragging)
+            return;
+
         bool endDragInput = false;
         Ray ray = new Ray();
         if (Input.GetKeyUp(KeyCode.Mouse0)) {
@@ -139,17 +146,13 @@ public class inputManager : MonoBehaviour {
         }
         if (!endDragInput)
             return;
-        if (endDragInput) {
-            if (currentstate == UIstate.InventoryDragging) {
-                RaycastHit hot;
-                if (Physics.Raycast(ray, out hot, Mathf.Infinity, intObjects)) {
-                    var co = hot.transform.GetComponent<clickableObject>();
-                    TryUseItem(inventorySelected, co);
-                }
-                currentstate = UIstate.Normal;
-                dragIcon.SetActive(false);
-            }
+        RaycastHit hot;
+        if (Physics.Raycast(ray, out hot, Mathf.Infinity, intObjects)) {
+            var co = hot.transform.GetComponent<clickableObject>();
+            TryUseItem(inventorySelected, co);
         }
+        currentstate = UIstate.Normal;
+        dragIcon.SetActive(false);
 
     }
     // Update is called once per frame
@@ -166,6 +169,10 @@ public class inputManager : MonoBehaviour {
                 normalLookRotation = player.transform.rotation;
                 currentstate = UIstate.Normal;
             }
+        }
+
+        if (currentstate == UIstate.InventoryUsing) {
+            CharAnim.Play("Idle");
         }
 
         if (currentstate == UIstate.InventoryDragging) {
@@ -200,19 +207,21 @@ public class inputManager : MonoBehaviour {
             var co = hit.transform.GetComponent<clickableObject>();
             //print("Osui");
             if (co) {
-                currentstate = UIstate.Normal;
+                player.enabled = false;
+                var target = co.transform.position;
+                target.y = player.transform.position.y;
+                //player.transform.LookAt(target, Vector3.up);
+                normalLookRotation = Quaternion.LookRotation(target - player.transform.position, Vector3.up);
+
                 if (currentstate == UIstate.InventoryUsing) {
                     TryUseItem(inventorySelected, co);
-                } else {
-                    player.enabled = false;
-                    var target = co.transform.position;
-                    target.y = player.transform.position.y;
-                    //player.transform.LookAt(target, Vector3.up);
-                    normalLookRotation = Quaternion.LookRotation(target - player.transform.position, Vector3.up);
 
+                } else {
                     // player.enabled = true;
                     OpenClickableCanvas(co);
                 }
+                currentstate = UIstate.Normal;
+
             }
         } else if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground | teleport)) {
             player.enabled = true;
