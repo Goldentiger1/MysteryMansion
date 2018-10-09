@@ -12,7 +12,7 @@ public class inputManager : MonoBehaviour {
 
     public Canvas canv;
 
-    public CursorMode cursorMode;
+    CursorMode cursorMode = CursorMode.ForceSoftware;
 
     public enum UIstate { Normal, InventoryUsing, InventoryDragging, Walking }
 

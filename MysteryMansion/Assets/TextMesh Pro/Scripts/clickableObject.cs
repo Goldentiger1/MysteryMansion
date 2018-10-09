@@ -14,7 +14,7 @@ public class clickableObject : MonoBehaviour {
     public bool takeActionAvailable;
     public bool lookActionAvailable;
 
-    public CursorMode cursormode = CursorMode.Auto;
+    CursorMode cursormode = CursorMode.ForceSoftware;
 
     public string objDescription;
 
