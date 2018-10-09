@@ -20,8 +20,12 @@ public class inventoryItem : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
+    public void LibDoor() {
+    Fabric.EventManager.Instance.PostEvent("Door");
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }
