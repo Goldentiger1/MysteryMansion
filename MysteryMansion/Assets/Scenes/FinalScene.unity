@@ -2202,7 +2202,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The doors won't open.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -2749,7 +2748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 830495546}
   destination: {fileID: 913594790}
   rooms:
@@ -2847,14 +2845,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 0}
   rooms:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &202305238
 BoxCollider:
@@ -3246,7 +3243,6 @@ MonoBehaviour:
   useActionAvailable: 1
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: There's a letter on the bed.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -4071,7 +4067,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The wall has the imprint of a painting.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -4759,7 +4754,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: An old painting. I wonder who left it here?
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 21300000, guid: 7b18991fc3496f7488b863c23a0325e7, type: 3}
@@ -4842,7 +4836,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: 'Painting #6'
   pickupPrefab: {fileID: 414076531}
   lookImage: {fileID: 0}
@@ -5054,7 +5047,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The wall has the imprint of a painting.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -5215,7 +5207,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: 'Painting #2'
   pickupPrefab: {fileID: 1172035822}
   lookImage: {fileID: 0}
@@ -5542,7 +5533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 744230913}
   rooms:
@@ -5871,7 +5861,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: 'Painting #5'
   pickupPrefab: {fileID: 140077264}
   lookImage: {fileID: 0}
@@ -6647,7 +6636,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 1748001895}
   rooms:
@@ -6758,7 +6746,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: Another music card! Let's see what tune this one plays.
   pickupPrefab: {fileID: 621497429}
   lookImage: {fileID: 0}
@@ -7803,7 +7790,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The wall has the imprint of a painting.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -7882,7 +7868,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: A steel hatchet
   pickupPrefab: {fileID: 83095606}
   lookImage: {fileID: 21300000, guid: 5863f9cb81538244ea52710bab48bd46, type: 3}
@@ -8853,7 +8838,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharAnim: {fileID: 310026482}
   canv: {fileID: 0}
-  cursorMode: 0
   Button: {fileID: 0}
   Button1: {fileID: 0}
   Button2: {fileID: 0}
@@ -9917,7 +9901,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The wall has the imprint of a painting.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -9996,7 +9979,6 @@ MonoBehaviour:
   useActionAvailable: 1
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: There's a letter on the table.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -10107,7 +10089,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The wall has the imprint of a painting.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -10369,7 +10350,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: A little-less sturdy looking ladder.
   pickupPrefab: {fileID: 1345948546}
   lookImage: {fileID: 21300000, guid: b9e3009281d36334f8bb1e362e9806df, type: 3}
@@ -10699,7 +10679,6 @@ MonoBehaviour:
   useActionAvailable: 1
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: A huge globe. A part of it feels loose.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -10764,7 +10743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 830495546}
   destination: {fileID: 1378360414}
   rooms:
@@ -11487,7 +11465,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: I can't quite reach the hatchet.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -12483,7 +12460,6 @@ MonoBehaviour:
   useActionAvailable: 1
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: A dusty old sheet.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -12625,7 +12601,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 915916199}
   rooms:
@@ -13160,7 +13135,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: 'Painting #1'
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 0}
@@ -13372,14 +13346,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 0}
   rooms:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1094380751
 BoxCollider:
@@ -13701,14 +13674,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 549162238}
   rooms:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1151434597
 BoxCollider:
@@ -13782,7 +13754,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The wall has the imprint of a painting.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -14325,7 +14296,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The stairs are missing. How am I to go upstairs?
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -14833,7 +14803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 637475935}
   rooms:
@@ -15129,7 +15098,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: Another music box.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 77162ec33d479c047b643a1a7c9b5597, type: 3}
@@ -15290,7 +15258,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: 'Painting #4'
   pickupPrefab: {fileID: 476146713}
   lookImage: {fileID: 0}
@@ -15427,7 +15394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 0}
   rooms:
@@ -15747,7 +15713,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: 'Painting #3'
   pickupPrefab: {fileID: 395682247}
   lookImage: {fileID: 0}
@@ -16679,7 +16644,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: An ordinary copper key.
   pickupPrefab: {fileID: 94953449}
   lookImage: {fileID: 21300000, guid: 7d6d355a035675a408e60211beca3e60, type: 3}
@@ -17722,7 +17686,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: The door seems to be locked.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -17923,14 +17886,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 0}
   rooms:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1400003565
 BoxCollider:
@@ -18299,7 +18261,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: A musical card to use in a music box, if I can find one...
   pickupPrefab: {fileID: 1505210468}
   lookImage: {fileID: 21300000, guid: a63ee38bc88f2684fb5d9a58f4342ce8, type: 3}
@@ -18759,7 +18720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 0}
   rooms:
@@ -18949,7 +18909,6 @@ MonoBehaviour:
   useActionAvailable: 1
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: An ornate chest.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: cae1091615f7fb84192d1427c86d7f20, type: 3}
@@ -20519,7 +20478,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: These planks are keeping the door shut.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: c4d4ded8745ca0e4bb70f808d62bbf70, type: 3}
@@ -21014,7 +20972,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: This door seems to be locked.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -22237,7 +22194,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 1
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: A beautiful silver key.
   pickupPrefab: {fileID: 804714077}
   lookImage: {fileID: 0}
@@ -22333,7 +22289,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: Maybe if I had something to climb higher?
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -22484,14 +22439,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 0}
   rooms:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1781511716
 BoxCollider:
@@ -22639,7 +22593,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: A silver lock.
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: e39bb946c69b9e049b355bf44bb733d9, type: 3}
@@ -23083,7 +23036,6 @@ MonoBehaviour:
   useActionAvailable: 1
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: A creaky old piano. I wonder if I can play it...
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
@@ -23179,7 +23131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 915916201}
   rooms:
@@ -24046,7 +23997,6 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  cursormode: 0
   objDescription: "It\u2019s one of those old-fashioned music boxes! I wonder if it
     works?"
   pickupPrefab: {fileID: 0}
@@ -24190,14 +24140,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 109706860}
   rooms:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1957477297
 BoxCollider:
@@ -25273,7 +25222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 0}
   rooms:
@@ -25633,7 +25581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52013ea02d59fc3499f18602940f86bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorMode: 0
   playerNav: {fileID: 0}
   destination: {fileID: 915916200}
   rooms:
