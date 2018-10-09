@@ -19,7 +19,7 @@ public class roomSwap : MonoBehaviour {
 
     public LayerMask rooms;
 
-    public Texture2D cursorWalk;
+    public List<Texture2D> cursorWalk;
     public Texture2D cursorNormal;
 
     RoomData room;
@@ -46,7 +46,7 @@ public class roomSwap : MonoBehaviour {
     }
 
     private void OnMouseEnter() {
-        Cursor.SetCursor(cursorWalk, hotSpot, cursorMode);
+        Cursor.SetCursor(cursorWalk[0], hotSpot, cursorMode);
     }
 
     private void OnMouseExit() {

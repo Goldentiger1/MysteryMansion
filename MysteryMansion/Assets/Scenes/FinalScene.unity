@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8da170210324b64992b88301454a697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FinalOpen: {fileID: 21300000, guid: c053d7d2ddca51b4bb98f49646d87a55, type: 3}
+  FinalOpen: {fileID: 21300000, guid: 7277080cdadd1b940bfbeaeae5095c83, type: 3}
   boardsDestroyed: 0
   lockOpened: 0
   FinalTeleport: {fileID: 793224581}
@@ -1007,7 +1007,7 @@ MonoBehaviour:
           m_MethodName: set_sprite
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 21300000, guid: 48896296d7497a34197d77b887eaf8c8,
+            m_ObjectArgument: {fileID: 21300000, guid: ddc6e2a89bbc8d94f82a32365bb08e44,
               type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
             m_IntArgument: 0
@@ -2206,7 +2206,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -2754,7 +2754,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16384
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &192489025
 BoxCollider:
@@ -2850,8 +2850,8 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorWalk: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &202305238
 BoxCollider:
@@ -3176,12 +3176,12 @@ Prefab:
         type: 2}
       propertyPath: cursorWalk
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 114868591079078584, guid: 3fc783b899e2c104cb22ae1326b5084e,
         type: 2}
       propertyPath: cursorNormal
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 1490022119929580, guid: 3fc783b899e2c104cb22ae1326b5084e, type: 2}
       propertyPath: m_Layer
       value: 16
@@ -3247,7 +3247,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls:
@@ -4071,7 +4071,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -4758,7 +4758,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 21300000, guid: 7b18991fc3496f7488b863c23a0325e7, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -4840,7 +4840,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 414076531}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -5051,7 +5051,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -5068,6 +5068,53 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   hotSpot: {x: 0, y: 0}
+--- !u!1 &369884494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 369884496}
+  - component: {fileID: 369884495}
+  m_Layer: 0
+  m_Name: CursWalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &369884495
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 369884494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 21b21e4da81c76d478e4d7a59457f09a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &369884496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 369884494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -75.56174, y: 23.298079, z: 3.47555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370386481
 GameObject:
   m_ObjectHideFlags: 0
@@ -5211,7 +5258,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 1172035822}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -5539,7 +5586,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &393460711
 BoxCollider:
@@ -5865,7 +5912,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 140077264}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -6642,7 +6689,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &429552786
 BoxCollider:
@@ -6750,7 +6797,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 621497429}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -7794,7 +7841,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -7872,7 +7919,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 83095606}
   lookImage: {fileID: 21300000, guid: 5863f9cb81538244ea52710bab48bd46, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -7889,6 +7936,53 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   hotSpot: {x: 0, y: 0}
+--- !u!1 &511798069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511798071}
+  - component: {fileID: 511798070}
+  m_Layer: 0
+  m_Name: CursUse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &511798070
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511798069}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac9ea60984a12c849b85cfa55e33e1c8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &511798071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511798069}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -75.56174, y: 23.298079, z: 3.47555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &524219258
 GameObject:
   m_ObjectHideFlags: 0
@@ -8184,7 +8278,7 @@ Prefab:
         type: 2}
       propertyPath: cursorNormal
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 1490022119929580, guid: 3fc783b899e2c104cb22ae1326b5084e, type: 2}
       propertyPath: m_Layer
       value: 16
@@ -8202,43 +8296,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc783b899e2c104cb22ae1326b5084e, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &561577404 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1474711308676188, guid: 10c76f5e48d46e949b6bd8d2d4a7f86a,
-    type: 2}
-  m_PrefabInternal: {fileID: 475802375}
 --- !u!20 &561577406 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 20760567451612408, guid: 10c76f5e48d46e949b6bd8d2d4a7f86a,
     type: 2}
   m_PrefabInternal: {fileID: 475802375}
---- !u!114 &561577407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 561577404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6376429b41984d742a57ff61b5ff01aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EndAnim: {fileID: 87176413}
---- !u!114 &561577408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 561577404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c5f1ee546133c4e80a80c3875e5df7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FR: {fileID: 0}
-  player:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &569934599
 GameObject:
   m_ObjectHideFlags: 0
@@ -8868,7 +8930,7 @@ MonoBehaviour:
   description: {fileID: 0}
   UseText: {fileID: 0}
   hapText: {fileID: 0}
-  cursNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   currentstate: 0
   hotSpot: {x: 0, y: 0}
   inventorySelected: {fileID: 0}
@@ -9905,7 +9967,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -9983,7 +10045,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls:
@@ -10093,7 +10155,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -10354,7 +10416,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 1345948546}
   lookImage: {fileID: 21300000, guid: b9e3009281d36334f8bb1e362e9806df, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -10683,7 +10745,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls:
@@ -10761,7 +10823,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16384
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &793224583
 BoxCollider:
@@ -11481,7 +11543,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -12035,12 +12097,12 @@ Prefab:
         type: 2}
       propertyPath: cursorWalk
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 114868591079078584, guid: 3fc783b899e2c104cb22ae1326b5084e,
         type: 2}
       propertyPath: cursorNormal
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 1490022119929580, guid: 3fc783b899e2c104cb22ae1326b5084e, type: 2}
       propertyPath: m_Layer
       value: 16
@@ -12476,7 +12538,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls:
@@ -12619,7 +12681,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1017283836
 BoxCollider:
@@ -12821,12 +12883,12 @@ Prefab:
         type: 2}
       propertyPath: cursorWalk
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 114868591079078584, guid: 3fc783b899e2c104cb22ae1326b5084e,
         type: 2}
       propertyPath: cursorNormal
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 1490022119929580, guid: 3fc783b899e2c104cb22ae1326b5084e, type: 2}
       propertyPath: m_Name
       value: Teleport (From 2nd)
@@ -12997,7 +13059,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1da838db65611e4c9319d214af77a5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cde4ba22f98ad9742b1db3111b90d64c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13151,7 +13213,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -13363,8 +13425,8 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorWalk: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1094380751
 BoxCollider:
@@ -13692,7 +13754,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1151434597
 BoxCollider:
@@ -13770,7 +13832,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -14311,8 +14373,8 @@ MonoBehaviour:
   objDescription: The stairs are missing. How am I to go upstairs?
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorUse: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -14821,7 +14883,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1228264361
 BoxCollider:
@@ -15274,7 +15336,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 476146713}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -15729,7 +15791,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 395682247}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -16660,7 +16722,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 94953449}
   lookImage: {fileID: 21300000, guid: 7d6d355a035675a408e60211beca3e60, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -16915,7 +16977,7 @@ Prefab:
         type: 2}
       propertyPath: cursorNormal
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 1490022119929580, guid: 3fc783b899e2c104cb22ae1326b5084e, type: 2}
       propertyPath: m_Name
       value: Teleport (To 2nd)
@@ -17702,7 +17764,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -17903,8 +17965,8 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorWalk: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1400003565
 BoxCollider:
@@ -18277,7 +18339,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 1505210468}
   lookImage: {fileID: 21300000, guid: a63ee38bc88f2684fb5d9a58f4342ce8, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -18737,8 +18799,8 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorWalk: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1468483170
 BoxCollider:
@@ -18925,7 +18987,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: cae1091615f7fb84192d1427c86d7f20, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls:
@@ -20494,7 +20556,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: c4d4ded8745ca0e4bb70f808d62bbf70, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -20988,7 +21050,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -22210,7 +22272,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 804714077}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -22305,7 +22367,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -22456,8 +22518,8 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorWalk: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1781511716
 BoxCollider:
@@ -22609,7 +22671,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: e39bb946c69b9e049b355bf44bb733d9, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -23052,7 +23114,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls:
@@ -23149,7 +23211,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16384
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1825002610
 BoxCollider:
@@ -24014,7 +24076,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 77162ec33d479c047b643a1a7c9b5597, type: 3}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -24158,7 +24220,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1957477297
 BoxCollider:
@@ -24301,7 +24363,7 @@ Prefab:
         type: 2}
       propertyPath: cursorNormal
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 4601874589781046, guid: 3fc783b899e2c104cb22ae1326b5084e, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
@@ -25599,7 +25661,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   cursorWalk: {fileID: 2800000, guid: f80f8f5b7a90d1f488ff5264d4096eaf, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &2112048955
 BoxCollider:
@@ -25945,12 +26007,12 @@ Prefab:
         type: 2}
       propertyPath: cursorWalk
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 114868591079078584, guid: 3fc783b899e2c104cb22ae1326b5084e,
         type: 2}
       propertyPath: cursorNormal
       value: 
-      objectReference: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+      objectReference: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
     - target: {fileID: 1490022119929580, guid: 3fc783b899e2c104cb22ae1326b5084e, type: 2}
       propertyPath: m_Layer
       value: 16
