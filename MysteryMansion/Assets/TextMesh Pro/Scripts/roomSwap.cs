@@ -19,6 +19,7 @@ public class roomSwap : MonoBehaviour {
 
     public LayerMask rooms;
 
+    //public List<Texture2D> cursorWalk;
     public Texture2D cursorNormal;
 
     RoomData room;
