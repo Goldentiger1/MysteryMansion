@@ -28,6 +28,7 @@ public class inputManager : MonoBehaviour {
     public GameObject InventoryElements;
     public GameObject dragIcon;
     public GameObject HapImage;
+    public GameObject LetterImage;
 
     public Inventory pItems;
 
@@ -105,7 +106,7 @@ public class inputManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        Fabric.EventManager.Instance.PostEvent("MainMusic");
+        //Fabric.EventManager.Instance.PostEvent("MainMusic");
         Cursor.SetCursor(cursNormal, hotSpot, cursorMode);
         dragIcon = transform.FindDeepChild("InvItemImage").gameObject;
         InventoryButton = transform.FindDeepChild("InventoryButton").gameObject;
@@ -127,6 +128,8 @@ public class inputManager : MonoBehaviour {
         UseText = transform.FindDeepChild("UText").GetComponent<Text>();
         Inventory = transform.FindDeepChild("Inventory").gameObject;
         hapText = transform.FindDeepChild("HapText").GetComponent<Text>();
+        LetterImage = transform.FindDeepChild("LetterImage").gameObject;
+
         HapAction();
         hapText.text = "You have just entered the Mystery Mansion. What secrets will you uncover?";
     }
@@ -269,6 +272,7 @@ public class inputManager : MonoBehaviour {
         }
         descBG.SetActive(true);
         Button3.SetActive(false);
+        LetterImage.SetActive(false);
         LookImage.SetActive(false);
         HapImage.SetActive(false);
 
@@ -307,6 +311,8 @@ public class inputManager : MonoBehaviour {
         Button1.SetActive(false);
         Button2.SetActive(false);
         Button3.SetActive(true);
+        LetterImage.SetActive(false);
+
         descBG.SetActive(false);
 
     }
@@ -322,7 +328,21 @@ public class inputManager : MonoBehaviour {
         Button1.SetActive(false);
         Button2.SetActive(false);
         Button3.SetActive(false);
+        LetterImage.SetActive(false);
+
         HapImage.SetActive(true);
     }
+    public void LetAction() {
+        UIelements.SetActive(true);
+        InventoryElements.SetActive(false);
+        descBG.SetActive(false);
+        Button.SetActive(false);
+        Button1.SetActive(false);
+        Button2.SetActive(false);
+        Button3.SetActive(false);
+        HapImage.SetActive(false);
+        LetterImage.SetActive(true);
+    }
+
 }
 
