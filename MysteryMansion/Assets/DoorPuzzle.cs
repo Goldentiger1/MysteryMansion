@@ -25,6 +25,7 @@ public class DoorPuzzle : MonoBehaviour {
 
     public void Update() {
         if (boardsDestroyed && lockOpened) {
+            boardsDestroyed = false;
             Destroy(GameObject.Find("DoorPuzzler"));
             FinalTeleport.SetActive(true);
             Fabric.EventManager.Instance.PostEvent("Pause");
