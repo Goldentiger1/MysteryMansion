@@ -18,11 +18,13 @@ public class clickableObject : MonoBehaviour {
 
     public string objDescription;
 
+    public float frameTimer = 0.5f;
+
     public GameObject pickupPrefab;
 
     public Sprite lookImage;
 
-    public Texture2D cursorUse;
+    public List <Texture2D> cursorUse;
     public Texture2D cursorNormal;
 
     public UnityEvent useAction;
@@ -39,7 +41,9 @@ public class clickableObject : MonoBehaviour {
     // Use this for initialization
 
     private void OnMouseEnter() {
-        Cursor.SetCursor(cursorUse, hotSpot, cursormode);
+        for (int i = 0; i < cursorUse.Count; i++) {
+            Cursor.SetCursor(cursorUse[i], hotSpot, cursormode);
+        }
     }
 
     private void OnMouseExit() {

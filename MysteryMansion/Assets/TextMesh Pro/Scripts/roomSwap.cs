@@ -47,6 +47,11 @@ public class roomSwap : MonoBehaviour {
 
     private void OnMouseEnter() {
         Cursor.SetCursor(cursorWalk[0], hotSpot, cursorMode);
+        Cursor.SetCursor(cursorWalk[1], hotSpot, cursorMode);
+        Cursor.SetCursor(cursorWalk[2], hotSpot, cursorMode);
+        Cursor.SetCursor(cursorWalk[3], hotSpot, cursorMode);
+        Cursor.SetCursor(cursorWalk[4], hotSpot, cursorMode);
+        Cursor.SetCursor(cursorWalk[5], hotSpot, cursorMode);
     }
 
     private void OnMouseExit() {
