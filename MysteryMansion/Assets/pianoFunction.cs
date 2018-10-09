@@ -17,16 +17,27 @@ public class pianoFunction : MonoBehaviour {
     public void PianoRegi() {
         IM.HapAction();
         if (PianoReg) {
+            Fabric.EventManager.Instance.PostEvent("Piano1");
+            Fabric.EventManager.Instance.PostEvent("Pause");
             IM.hapText.text = "The note doesn't sound right, somethings a little off.";
         } else if (PianoCard1) {
+            Fabric.EventManager.Instance.PostEvent("Pause");
+            Fabric.EventManager.Instance.PostEvent("Piano2");
             IM.hapText.text = "The note  still doesn't sound quite right.";
         } else if (PianoCard2) {
+            Fabric.EventManager.Instance.PostEvent("Pause");
+            Fabric.EventManager.Instance.PostEvent("Piano3");
             IM.hapText.text = "The note sounds in tune with the music box, and the fireplace has opened";
             Pianokey.SetActive(true);
             GameObject.FindGameObjectWithTag("OseSpecial").gameObject.GetComponent<SpriteRenderer>().sprite = FireOpen;
             //FireClose = FireOpen;
         }
 
+    }
+
+    public void MusicBox1() {
+        Fabric.EventManager.Instance.PostEvent("Pause");
+        Fabric.EventManager.Instance.PostEvent("Musicbox");
     }
 
     public void MusicCard1() {
