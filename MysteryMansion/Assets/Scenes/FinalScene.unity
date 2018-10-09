@@ -4073,7 +4073,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -5056,7 +5056,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -7873,7 +7873,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -10097,7 +10097,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -10148,7 +10148,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -13828,7 +13828,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 20dae8a4d60c4a0458e41c2b0b4ba753, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
