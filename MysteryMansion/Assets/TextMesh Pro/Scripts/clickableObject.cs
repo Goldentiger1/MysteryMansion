@@ -19,6 +19,7 @@ public class clickableObject : MonoBehaviour {
     public string objDescription;
 
     public float frameTimer = 0.5f;
+    public float frameT = 0f;
 
     public GameObject pickupPrefab;
 
@@ -41,8 +42,12 @@ public class clickableObject : MonoBehaviour {
     // Use this for initialization
 
     private void OnMouseEnter() {
+        frameT = frameT + Time.deltaTime;
         for (int i = 0; i < cursorUse.Count; i++) {
-            Cursor.SetCursor(cursorUse[i], hotSpot, cursormode);
+            if (frameT >= frameTimer) {
+                Cursor.SetCursor(cursorUse[i], hotSpot, cursormode);
+                frameT = 0;
+            }
         }
     }
 
