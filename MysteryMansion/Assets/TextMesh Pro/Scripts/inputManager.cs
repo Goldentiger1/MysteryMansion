@@ -30,6 +30,10 @@ public class inputManager : MonoBehaviour {
     public GameObject HapImage;
     public GameObject LetterImage;
 
+    float frameT = 0;
+    float frameTimer = 0.1f;
+    int currentCursorFrame = 0;
+
     public Inventory pItems;
 
     public LayerMask ground;
@@ -44,6 +48,8 @@ public class inputManager : MonoBehaviour {
     public Text hapText;
 
     public Texture2D cursNormal;
+    public List<Texture2D> cursUse;
+    public List<Texture2D> cursWalk;
 
     public UIstate currentstate;
 
@@ -60,6 +66,26 @@ public class inputManager : MonoBehaviour {
         dragIcon.GetComponent<Image>().sprite = inventorySelected.itemSprite; //DISprite;
         dragIcon.SetActive(true);
         Cursor.visible = false;
+    }
+
+    public void CursorUse() {
+        frameT = frameT + Time.deltaTime;
+        if (frameT >= frameTimer) {
+            currentCursorFrame++;
+            currentCursorFrame %= cursUse.Count;
+            Cursor.SetCursor(cursUse[currentCursorFrame], hotSpot, cursorMode);
+            frameT = 0;
+        }
+    }
+
+    public void CursorWalk() {
+        frameT = frameT + Time.deltaTime;
+        if (frameT >= frameTimer) {
+            currentCursorFrame++;
+            currentCursorFrame %= cursWalk.Count;
+            Cursor.SetCursor(cursWalk[currentCursorFrame], hotSpot, cursorMode);
+            frameT = 0;
+        }
     }
 
     public void InventoryItemDrag(inventoryItem dragItem) {
@@ -132,7 +158,6 @@ public class inputManager : MonoBehaviour {
         Inventory = transform.FindDeepChild("Inventory").gameObject;
         hapText = transform.FindDeepChild("HapText").GetComponent<Text>();
         LetterImage = transform.FindDeepChild("LetterImage").gameObject;
-
         HapAction();
         hapText.text = "You have just entered the Mystery Mansion. What secrets will you uncover?";
     }
@@ -333,7 +358,6 @@ public class inputManager : MonoBehaviour {
         Button2.SetActive(false);
         Button3.SetActive(false);
         LetterImage.SetActive(false);
-
         HapImage.SetActive(true);
     }
     public void LetAction() {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43684494, g: 0.48448992, b: 0.56474733, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2204,7 +2204,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The doors won't open.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -3248,7 +3249,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: There's a letter on the bed.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -4139,7 +4141,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -4817,7 +4820,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: An old painting. I wonder who left it here?
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 21300000, guid: 7b18991fc3496f7488b863c23a0325e7, type: 3}
   cursorUse:
@@ -4907,7 +4911,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #6'
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 414076531}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -5119,7 +5124,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -5280,7 +5286,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #2'
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 1172035822}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -5935,7 +5942,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #5'
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 140077264}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -6821,7 +6829,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: Another music card! Let's see what tune this one plays.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 621497429}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -7934,7 +7943,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -8013,7 +8023,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: A steel hatchet
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 83095606}
   lookImage: {fileID: 21300000, guid: 5863f9cb81538244ea52710bab48bd46, type: 3}
   cursorUse: []
@@ -8949,7 +8960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f64111c68ae0a46925653abf808c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharAnim: {fileID: 0}
+  CharAnim: {fileID: 2135038167}
   canv: {fileID: 0}
   Button: {fileID: 0}
   Button1: {fileID: 0}
@@ -8982,6 +8993,21 @@ MonoBehaviour:
   UseText: {fileID: 0}
   hapText: {fileID: 0}
   cursNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
+  cursUse:
+  - {fileID: 2800000, guid: ee074f24b6ac5c443a965e737a4534d6, type: 3}
+  - {fileID: 2800000, guid: e2193e3b4ffe14e4e9f8cc2a9a7924fd, type: 3}
+  - {fileID: 2800000, guid: dcb52739036f37647a0d8b633c8766a4, type: 3}
+  - {fileID: 2800000, guid: 06cbd2e08235c0547a3d1ac7ee67eee9, type: 3}
+  - {fileID: 2800000, guid: 9ef9af9fe351f9f48abec61654b882c9, type: 3}
+  - {fileID: 2800000, guid: aba1e9122f595ea40a2fb33d827060be, type: 3}
+  - {fileID: 2800000, guid: e18b15e28d14efa4aa48f8bc2648d1a5, type: 3}
+  cursWalk:
+  - {fileID: 2800000, guid: 454f40f6be2dc324889c81b93c998559, type: 3}
+  - {fileID: 2800000, guid: e3233f68a690cdb4ab423bfd8f228315, type: 3}
+  - {fileID: 2800000, guid: 4ff693d204da3d942891f8841a8147e9, type: 3}
+  - {fileID: 2800000, guid: 940d3e6fb4c44b3408c2962430112a33, type: 3}
+  - {fileID: 2800000, guid: 2b18990379caf0d499f4c58d345422f5, type: 3}
+  - {fileID: 2800000, guid: 8fb1736d1a186c14cba6c2909dd66c93, type: 3}
   currentstate: 0
   hotSpot: {x: 0, y: 0}
   inventorySelected: {fileID: 0}
@@ -10016,7 +10042,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -10095,7 +10122,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: There's a letter on the table.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -10206,7 +10234,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -10468,7 +10497,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: A little-less sturdy looking ladder.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 1345948546}
   lookImage: {fileID: 21300000, guid: b9e3009281d36334f8bb1e362e9806df, type: 3}
   cursorUse: []
@@ -10798,7 +10828,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: A huge globe. A part of it feels loose.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -11597,7 +11628,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: I can't quite reach the hatchet.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -12598,7 +12630,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: A dusty old sheet.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse:
@@ -13281,7 +13314,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #1'
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -13996,7 +14030,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400060, guid: cd11ebb42013dd64689c72a791282022, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.32
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400060, guid: cd11ebb42013dd64689c72a791282022, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14034,6 +14068,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 959af79d24679a740a697ae70e7f19ae, type: 2}
+    - target: {fileID: 9500000, guid: cd11ebb42013dd64689c72a791282022, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5c9549dfcb7f6e345874b5294b27385a, type: 2}
+    - target: {fileID: 400060, guid: cd11ebb42013dd64689c72a791282022, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: cd11ebb42013dd64689c72a791282022, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: cd11ebb42013dd64689c72a791282022, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd11ebb42013dd64689c72a791282022, type: 3}
   m_IsPrefabAsset: 0
@@ -14053,7 +14103,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -14369,7 +14420,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.43867922, g: 0.93157977, b: 1, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 1.5
   m_Range: 50
   m_SpotAngle: 54.1
   m_CookieSize: 10
@@ -14662,7 +14713,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The stairs are missing. How am I to go upstairs?
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -15407,7 +15459,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: Another music box.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 77162ec33d479c047b643a1a7c9b5597, type: 3}
   cursorUse: []
@@ -15568,7 +15621,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #4'
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 476146713}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -16090,7 +16144,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #3'
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 395682247}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -17022,7 +17077,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: An ordinary copper key.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 94953449}
   lookImage: {fileID: 21300000, guid: 7d6d355a035675a408e60211beca3e60, type: 3}
   cursorUse: []
@@ -18065,7 +18121,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The door seems to be locked.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -18773,7 +18830,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: A musical card to use in a music box, if I can find one...
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 1505210468}
   lookImage: {fileID: 21300000, guid: a63ee38bc88f2684fb5d9a58f4342ce8, type: 3}
   cursorUse: []
@@ -19422,7 +19480,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: An ornate chest.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: cae1091615f7fb84192d1427c86d7f20, type: 3}
   cursorUse: []
@@ -20993,7 +21052,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: These planks are keeping the door shut.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: c4d4ded8745ca0e4bb70f808d62bbf70, type: 3}
   cursorUse: []
@@ -21488,7 +21548,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: This door seems to be locked.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -22777,7 +22838,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: A beautiful silver key.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 804714077}
   lookImage: {fileID: 0}
   cursorUse:
@@ -22880,7 +22942,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: Maybe if I had something to climb higher?
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -23186,7 +23249,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: A silver lock.
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: e39bb946c69b9e049b355bf44bb733d9, type: 3}
   cursorUse: []
@@ -23630,7 +23694,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: A creaky old piano. I wonder if I can play it...
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorUse: []
@@ -23980,7 +24045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1841557669
 Light:
   m_ObjectHideFlags: 0
@@ -24593,7 +24658,8 @@ MonoBehaviour:
   lookActionAvailable: 0
   objDescription: "It\u2019s one of those old-fashioned music boxes! I wonder if it
     works?"
-  frameTimer: 0.5
+  currentCursorFrame: 0
+  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 77162ec33d479c047b643a1a7c9b5597, type: 3}
   cursorUse: []
@@ -26387,6 +26453,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2116450155}
   m_CullTransparentMesh: 0
+--- !u!95 &2135038167 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: cd11ebb42013dd64689c72a791282022,
+    type: 3}
+  m_PrefabInternal: {fileID: 1162172685}
 --- !u!1 &2135234757
 GameObject:
   m_ObjectHideFlags: 0

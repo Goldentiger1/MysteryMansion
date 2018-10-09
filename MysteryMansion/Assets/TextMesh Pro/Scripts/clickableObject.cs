@@ -18,14 +18,10 @@ public class clickableObject : MonoBehaviour {
 
     public string objDescription;
 
-    public float frameTimer = 0.5f;
-    public float frameT = 0f;
-
     public GameObject pickupPrefab;
 
     public Sprite lookImage;
 
-    public List <Texture2D> cursorUse;
     public Texture2D cursorNormal;
 
     public UnityEvent useAction;
@@ -41,14 +37,8 @@ public class clickableObject : MonoBehaviour {
     }
     // Use this for initialization
 
-    private void OnMouseEnter() {
-        frameT = frameT + Time.deltaTime;
-        for (int i = 0; i < cursorUse.Count; i++) {
-            if (frameT >= frameTimer) {
-                Cursor.SetCursor(cursorUse[i], hotSpot, cursormode);
-                frameT = 0;
-            }
-        }
+    private void OnMouseOver() {
+        IM.CursorUse();
     }
 
     private void OnMouseExit() {
@@ -56,6 +46,7 @@ public class clickableObject : MonoBehaviour {
     }
 
     void Start() {
+        IM = GameObject.FindObjectOfType<inputManager>();
     }
     //canv = GameObject.FindObjectOfType<Canvas>();
     //canv.enabled = false;

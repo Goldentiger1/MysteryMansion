@@ -19,12 +19,13 @@ public class roomSwap : MonoBehaviour {
 
     public LayerMask rooms;
 
-    public List<Texture2D> cursorWalk;
     public Texture2D cursorNormal;
 
     RoomData room;
 
     public Vector2 hotSpot;
+
+    inputManager IM;
 
     //public List<Camera> cameras;
 
@@ -39,19 +40,15 @@ public class roomSwap : MonoBehaviour {
     // Use this for initialization
     void Start() {
         playerNav = GameObject.Find("Protoplayer").GetComponent<NavMeshAgent>();
+        IM = GameObject.FindObjectOfType<inputManager>();
     }
 
     // Update is called once per frame
     void Update() {
     }
 
-    private void OnMouseEnter() {
-        Cursor.SetCursor(cursorWalk[0], hotSpot, cursorMode);
-        Cursor.SetCursor(cursorWalk[1], hotSpot, cursorMode);
-        Cursor.SetCursor(cursorWalk[2], hotSpot, cursorMode);
-        Cursor.SetCursor(cursorWalk[3], hotSpot, cursorMode);
-        Cursor.SetCursor(cursorWalk[4], hotSpot, cursorMode);
-        Cursor.SetCursor(cursorWalk[5], hotSpot, cursorMode);
+    private void OnMouseOver() {
+        IM.CursorWalk();
     }
 
     private void OnMouseExit() {
