@@ -12,7 +12,7 @@ public class inputManager : MonoBehaviour {
 
     public Canvas canv;
 
-    public CursorMode cursorMode;
+    CursorMode cursorMode = CursorMode.ForceSoftware;
 
     public enum UIstate { Normal, InventoryUsing, InventoryDragging, Walking }
 
@@ -28,6 +28,7 @@ public class inputManager : MonoBehaviour {
     public GameObject InventoryElements;
     public GameObject dragIcon;
     public GameObject HapImage;
+    public GameObject LetterImage;
 
     public Inventory pItems;
 
@@ -58,6 +59,7 @@ public class inputManager : MonoBehaviour {
         currentstate = UIstate.InventoryDragging;
         dragIcon.GetComponent<Image>().sprite = inventorySelected.itemSprite; //DISprite;
         dragIcon.SetActive(true);
+        Cursor.visible = false;
     }
 
     public void InventoryItemDrag(inventoryItem dragItem) {
@@ -95,17 +97,19 @@ public class inputManager : MonoBehaviour {
                 pItems.Remove(selected.gameObject);
                 UseText.text = "";
                 dragIcon.SetActive(false);
+                Cursor.visible = true;
                 return;
             }
         }
         dragIcon.SetActive(false);
+        Cursor.visible = true;
         UseText.text = "Nothing happens.";
         print("Nothing happens.");
     }
 
     // Use this for initialization
     void Start() {
-        Fabric.EventManager.Instance.PostEvent("MainMusic");
+        //Fabric.EventManager.Instance.PostEvent("MainMusic");
         Cursor.SetCursor(cursNormal, hotSpot, cursorMode);
         dragIcon = transform.FindDeepChild("InvItemImage").gameObject;
         InventoryButton = transform.FindDeepChild("InventoryButton").gameObject;
@@ -127,6 +131,8 @@ public class inputManager : MonoBehaviour {
         UseText = transform.FindDeepChild("UText").GetComponent<Text>();
         Inventory = transform.FindDeepChild("Inventory").gameObject;
         hapText = transform.FindDeepChild("HapText").GetComponent<Text>();
+        LetterImage = transform.FindDeepChild("LetterImage").gameObject;
+
         HapAction();
         hapText.text = "You have just entered the Mystery Mansion. What secrets will you uncover?";
     }
@@ -152,6 +158,7 @@ public class inputManager : MonoBehaviour {
             TryUseItem(inventorySelected, co);
         }
         currentstate = UIstate.Normal;
+        Cursor.visible = true;
         dragIcon.SetActive(false);
 
     }
@@ -269,6 +276,7 @@ public class inputManager : MonoBehaviour {
         }
         descBG.SetActive(true);
         Button3.SetActive(false);
+        LetterImage.SetActive(false);
         LookImage.SetActive(false);
         HapImage.SetActive(false);
 
@@ -307,6 +315,8 @@ public class inputManager : MonoBehaviour {
         Button1.SetActive(false);
         Button2.SetActive(false);
         Button3.SetActive(true);
+        LetterImage.SetActive(false);
+
         descBG.SetActive(false);
 
     }
@@ -322,7 +332,21 @@ public class inputManager : MonoBehaviour {
         Button1.SetActive(false);
         Button2.SetActive(false);
         Button3.SetActive(false);
+        LetterImage.SetActive(false);
+
         HapImage.SetActive(true);
     }
+    public void LetAction() {
+        UIelements.SetActive(true);
+        InventoryElements.SetActive(false);
+        descBG.SetActive(false);
+        Button.SetActive(false);
+        Button1.SetActive(false);
+        Button2.SetActive(false);
+        Button3.SetActive(false);
+        HapImage.SetActive(false);
+        LetterImage.SetActive(true);
+    }
+
 }
 
