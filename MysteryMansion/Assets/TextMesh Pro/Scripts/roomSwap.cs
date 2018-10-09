@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class roomSwap : MonoBehaviour {
 
-    public CursorMode cursorMode = CursorMode.Auto;
+    CursorMode cursorMode = CursorMode.ForceSoftware;
 
     public NavMeshAgent playerNav;
 
