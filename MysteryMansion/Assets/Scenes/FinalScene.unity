@@ -2204,11 +2204,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The doors won't open.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -2758,7 +2755,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 16384
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &192489025
@@ -2855,7 +2851,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &202305238
@@ -3249,11 +3244,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: There's a letter on the bed.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -4141,11 +4133,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -4820,18 +4809,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: An old painting. I wonder who left it here?
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 21300000, guid: 7b18991fc3496f7488b863c23a0325e7, type: 3}
-  cursorUse:
-  - {fileID: 2800000, guid: ee074f24b6ac5c443a965e737a4534d6, type: 3}
-  - {fileID: 2800000, guid: e2193e3b4ffe14e4e9f8cc2a9a7924fd, type: 3}
-  - {fileID: 2800000, guid: dcb52739036f37647a0d8b633c8766a4, type: 3}
-  - {fileID: 2800000, guid: 06cbd2e08235c0547a3d1ac7ee67eee9, type: 3}
-  - {fileID: 2800000, guid: 9ef9af9fe351f9f48abec61654b882c9, type: 3}
-  - {fileID: 2800000, guid: aba1e9122f595ea40a2fb33d827060be, type: 3}
-  - {fileID: 2800000, guid: e18b15e28d14efa4aa48f8bc2648d1a5, type: 3}
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -4911,11 +4890,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #6'
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 414076531}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -5124,11 +5100,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -5286,11 +5259,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #2'
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 1172035822}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -5618,7 +5588,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &393460711
@@ -5942,11 +5911,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #5'
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 140077264}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -6723,7 +6689,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &429552786
@@ -6829,11 +6794,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: Another music card! Let's see what tune this one plays.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 621497429}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -7943,11 +7905,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -8023,11 +7982,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: A steel hatchet
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 83095606}
   lookImage: {fileID: 21300000, guid: 5863f9cb81538244ea52710bab48bd46, type: 3}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -10042,11 +9998,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -10122,11 +10075,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: There's a letter on the table.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -10234,11 +10184,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -10497,11 +10444,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: A little-less sturdy looking ladder.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 1345948546}
   lookImage: {fileID: 21300000, guid: b9e3009281d36334f8bb1e362e9806df, type: 3}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -10828,11 +10772,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: A huge globe. A part of it feels loose.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -10910,7 +10851,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 16384
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &793224583
@@ -11628,11 +11568,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: I can't quite reach the hatchet.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -12630,18 +12567,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: A dusty old sheet.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse:
-  - {fileID: 2800000, guid: ee074f24b6ac5c443a965e737a4534d6, type: 3}
-  - {fileID: 2800000, guid: e2193e3b4ffe14e4e9f8cc2a9a7924fd, type: 3}
-  - {fileID: 2800000, guid: dcb52739036f37647a0d8b633c8766a4, type: 3}
-  - {fileID: 2800000, guid: 06cbd2e08235c0547a3d1ac7ee67eee9, type: 3}
-  - {fileID: 2800000, guid: 9ef9af9fe351f9f48abec61654b882c9, type: 3}
-  - {fileID: 2800000, guid: aba1e9122f595ea40a2fb33d827060be, type: 3}
-  - {fileID: 2800000, guid: e18b15e28d14efa4aa48f8bc2648d1a5, type: 3}
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -12784,7 +12711,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1017283836
@@ -13314,11 +13240,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #1'
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -13531,7 +13454,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1094380751
@@ -13953,7 +13875,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1151434597
@@ -14103,11 +14024,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The wall has the imprint of a painting.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -14713,11 +14631,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The stairs are missing. How am I to go upstairs?
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -15168,7 +15083,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1228264361
@@ -15459,12 +15373,9 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: Another music box.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 77162ec33d479c047b643a1a7c9b5597, type: 3}
-  cursorUse: []
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -15621,11 +15532,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #4'
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 476146713}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -15763,7 +15671,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 0}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1250170456
@@ -16144,11 +16051,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: 'Painting #3'
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 395682247}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -17077,11 +16981,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: An ordinary copper key.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 94953449}
   lookImage: {fileID: 21300000, guid: 7d6d355a035675a408e60211beca3e60, type: 3}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -18121,11 +18022,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: The door seems to be locked.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -18327,7 +18225,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1400003565
@@ -18830,11 +18727,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: A musical card to use in a music box, if I can find one...
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 1505210468}
   lookImage: {fileID: 21300000, guid: a63ee38bc88f2684fb5d9a58f4342ce8, type: 3}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -19295,7 +19189,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1468483170
@@ -19480,11 +19373,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: An ornate chest.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: cae1091615f7fb84192d1427c86d7f20, type: 3}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -21052,11 +20942,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: These planks are keeping the door shut.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: c4d4ded8745ca0e4bb70f808d62bbf70, type: 3}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -21548,11 +21435,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: This door seems to be locked.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -22838,18 +22722,8 @@ MonoBehaviour:
   takeActionAvailable: 1
   lookActionAvailable: 0
   objDescription: A beautiful silver key.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 804714077}
   lookImage: {fileID: 0}
-  cursorUse:
-  - {fileID: 2800000, guid: ee074f24b6ac5c443a965e737a4534d6, type: 3}
-  - {fileID: 2800000, guid: e2193e3b4ffe14e4e9f8cc2a9a7924fd, type: 3}
-  - {fileID: 2800000, guid: dcb52739036f37647a0d8b633c8766a4, type: 3}
-  - {fileID: 2800000, guid: 06cbd2e08235c0547a3d1ac7ee67eee9, type: 3}
-  - {fileID: 2800000, guid: 9ef9af9fe351f9f48abec61654b882c9, type: 3}
-  - {fileID: 2800000, guid: aba1e9122f595ea40a2fb33d827060be, type: 3}
-  - {fileID: 2800000, guid: e18b15e28d14efa4aa48f8bc2648d1a5, type: 3}
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -22942,11 +22816,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: Maybe if I had something to climb higher?
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -23099,7 +22970,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1781511716
@@ -23249,11 +23119,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: A silver lock.
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: e39bb946c69b9e049b355bf44bb733d9, type: 3}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -23694,11 +23561,8 @@ MonoBehaviour:
   takeActionAvailable: 0
   lookActionAvailable: 0
   objDescription: A creaky old piano. I wonder if I can play it...
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -23795,7 +23659,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 16384
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1825002610
@@ -24658,11 +24521,8 @@ MonoBehaviour:
   lookActionAvailable: 0
   objDescription: "It\u2019s one of those old-fashioned music boxes! I wonder if it
     works?"
-  currentCursorFrame: 0
-  frameT: 0
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 21300000, guid: 77162ec33d479c047b643a1a7c9b5597, type: 3}
-  cursorUse: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   useAction:
     m_PersistentCalls:
@@ -24806,13 +24666,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk:
-  - {fileID: 2800000, guid: 454f40f6be2dc324889c81b93c998559, type: 3}
-  - {fileID: 2800000, guid: e3233f68a690cdb4ab423bfd8f228315, type: 3}
-  - {fileID: 2800000, guid: 4ff693d204da3d942891f8841a8147e9, type: 3}
-  - {fileID: 2800000, guid: 940d3e6fb4c44b3408c2962430112a33, type: 3}
-  - {fileID: 2800000, guid: 2b18990379caf0d499f4c58d345422f5, type: 3}
-  - {fileID: 2800000, guid: 8fb1736d1a186c14cba6c2909dd66c93, type: 3}
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &1957477297
@@ -25895,7 +25748,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 0}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &2073775961
@@ -26320,7 +26172,6 @@ MonoBehaviour:
   rooms:
     serializedVersion: 2
     m_Bits: 0
-  cursorWalk: []
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
   hotSpot: {x: 0, y: 0}
 --- !u!65 &2112048955
