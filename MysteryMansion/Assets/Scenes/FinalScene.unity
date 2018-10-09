@@ -11757,7 +11757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &869332674
 Transform:
   m_ObjectHideFlags: 0
@@ -23634,11 +23634,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: b1acafc28b09c8e4ebf2962b440bb8ee, type: 3}
-    m_FontSize: 12
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -23648,34 +23648,20 @@ MonoBehaviour:
   m_Text: "Please, my dear, allow me to introduce myself. I once was a man with the
     name of Archibald Clemens but that was before I died. In death, I have learnt
     that we exist in the purgatory or hell of our own making. My hell is this house
-    built of cement and greed, a monument for avarice, disdain and my own supremacy.\n\nI
-    lived when the world\u2019s industry ran on coal and children, these little souls
-    sacrificed in the name of Mamon and progress, their bodies and minds ground to
-    pulp in the soulless iron machines making things for the rich to buy as the people
-    who made them lived in squalor.\n\nThere were no trade unions but Karl Marx and
-    others were getting their voices heard and in France sabotage was invented as
-    the workers threw their clogs, wooden shoes called sabot, in the machines to break
-    them.\n\nIn my factories the workers attempted to strike but I had Pinkertons
-    break that strike and so many souls were sacrificed on my altar of greed, this
-    vessel bathed in the blood of innocents instead of the guilty like me.\n\nI will
-    tell you my story if you will listen, and I will grant you wealth beyond your
-    dreams. Whatever you do, my dear, you will set me free or join me forever and
-    a day.\n\nAs I told you, I was Archibald Clemens, a factory owner and maker of
-    fine and durable textiles. My factories spewed their coal-fired malice and greed
-    into the heavens and the town around my buildings. I was what they called a poltroon,
-    the town was mine as was the currency. The scrip was a marvelous thing we had
-    created. We paid the workers with our own currency that was not recognized by
-    others. So company store was the only place where it worked and we owned our workers
-    in body if not the soul. No, the souls I would take as the dangerous machines
-    hurt them. Those souls were woven in malice into this house and they have tormented
-    me till this day. I created my hell and now my wardens need to be set free.  \n\nI
-    never had a child that lived. All my three wives died in birth followed by my
-    children soon after. A boy I named Christian even if he was never embraced by
-    Church, a daughter we called Anna who was brought to the bosom of our Christ the
-    Savior but taken from us too early. And then there were the twins, Marcus and
-    Lucas, my boys I never saw as the wing of this house burnt on the night of their
-    birth. We never found them or my wife Annabelle in the ashes, the cracked concrete
-    and steel. "
+    built of cement and greed, a monument for avarice, disdain and my own supremacy.\r\n\r\nI
+    will tell you my story if you will listen, and I will grant you wealth beyond
+    your dreams. Whatever you do, my dear, you will set me free or join me forever
+    and a day.\r\n\r\nAs I told you, I was Archibald Clemens, a factory owner and
+    maker of fine and durable textiles. My factories spewed their coal-fired malice
+    and greed into the heavens and the town around my buildings. I was what they called
+    a poltroon, the town was mine as was the currency. I created my hell and now my
+    wardens need to be set free.\r\n\r\nI never had a child that lived. All my three
+    wives died in birth followed by my children soon after. A boy I named Christian
+    even if he was never embraced by Church, a daughter we called Anne who was brought
+    to the bosom of our Christ the Savior but taken from us too early. And then there
+    were the twins, Marcus and Lucas, my boys I never saw as the wing of this house
+    burnt on the night of their birth. We never found them or my wife Annabelle in
+    the ashes, the cracked concrete and steel.\r"
 --- !u!222 &1863221377
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24641,7 +24627,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: b1acafc28b09c8e4ebf2962b440bb8ee, type: 3}
-    m_FontSize: 15
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -24652,25 +24638,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I believed myself to be a good Christian. We attended church and gave alms
-    there, I rented rooms to my workers and sold them the things they needed. They
-    wanted schools but what would rabble do with an education? No, this I would not
-    give as it was above their station. The hospital we built and of course they wanted
-    it for free but nothing\u2019s free even for me. They asked me to build a home
-    for the elderly but there was no business in this, what would the old profit me
-    as they could not pay. This, you see, was the sign of the times and God blessed
-    me with riches beyond measure. \r\n\r\nFor I was a good man with good family but
-    like Job I too lost my family many a time over and every time but the last the
-    Good Lord gave me a new one for he saw my devotion in church. Life went on and
-    on and eventually the pinkos became more and more prevalent in the workplace.
-    Damn Karl Marx and his socialism, workers\u2019 rights. If the workers weren\u2019t
-    lazy God would make them rich like I was. Or so I thought.\r\n\r\nI have learnt
-    better.\r\n\r\nI was a horrible man feared by everyone, not respected as I thought.
-    Money and power  were the things they respected and believed, as I did, you were
-    a good and godly man because you had them. \r\n\r\nI was a monster and I have
-    a secret for you. \r\nAnnabelle, Marcus and Lucas lived. They escaped and lived
-    happy lives and they followed their hearts.\r\nYou, my dear, are my descendant.
-    Last of the line and my empire belongs to you as do the riches in the vault.\r\n"
+  m_Text: "I was a good man with good family, but like Job, I too lost my family many
+    a time over and every time but the last the Good Lord gave me a new one for he
+    saw my devotion in church. Life went on and on and eventually the pinkos became
+    more and more prevalent in the workplace. Damn Karl Marx and his socialism, workers\u2019
+    rights. If the workers weren\u2019t lazy God would make them rich like I was.
+    Or so I thought.\r\n\r\nI have learnt better.\r\n\r\nI was a horrible man feared
+    by everyone, not respected as I thought. Money and power  were the things they
+    respected and believed, as I did, you were a good and godly man because you had
+    them. \r\n\r\nI was a monster and I have a secret for you. \r\n\nAnnabelle, Marcus
+    and Lucas lived. They escaped and lived happy lives and they followed their hearts.\n\r\nYou,
+    my dear, are my descendant. Last of the line and my empire belongs to you as do
+    the riches in the vault.   \r\n"
 --- !u!222 &1996017380
 CanvasRenderer:
   m_ObjectHideFlags: 0
