@@ -59,6 +59,7 @@ public class inputManager : MonoBehaviour {
         currentstate = UIstate.InventoryDragging;
         dragIcon.GetComponent<Image>().sprite = inventorySelected.itemSprite; //DISprite;
         dragIcon.SetActive(true);
+        Cursor.visible = false;
     }
 
     public void InventoryItemDrag(inventoryItem dragItem) {
@@ -96,10 +97,12 @@ public class inputManager : MonoBehaviour {
                 pItems.Remove(selected.gameObject);
                 UseText.text = "";
                 dragIcon.SetActive(false);
+                Cursor.visible = true;
                 return;
             }
         }
         dragIcon.SetActive(false);
+        Cursor.visible = true;
         UseText.text = "Nothing happens.";
         print("Nothing happens.");
     }
@@ -155,6 +158,7 @@ public class inputManager : MonoBehaviour {
             TryUseItem(inventorySelected, co);
         }
         currentstate = UIstate.Normal;
+        Cursor.visible = true;
         dragIcon.SetActive(false);
 
     }
