@@ -4708,8 +4708,8 @@ MonoBehaviour:
   objDescription: 'Painting #6'
   pickupPrefab: {fileID: 414076531}
   lookImage: {fileID: 0}
-  cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -5081,8 +5081,8 @@ MonoBehaviour:
   objDescription: 'Painting #2'
   pickupPrefab: {fileID: 1172035822}
   lookImage: {fileID: 0}
-  cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -5737,8 +5737,8 @@ MonoBehaviour:
   objDescription: 'Painting #5'
   pickupPrefab: {fileID: 140077264}
   lookImage: {fileID: 0}
-  cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -12803,8 +12803,8 @@ MonoBehaviour:
   objDescription: 'Painting #1'
   pickupPrefab: {fileID: 458794102}
   lookImage: {fileID: 0}
-  cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -14790,8 +14790,8 @@ MonoBehaviour:
   objDescription: 'Painting #4'
   pickupPrefab: {fileID: 476146713}
   lookImage: {fileID: 0}
-  cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
@@ -15247,8 +15247,8 @@ MonoBehaviour:
   objDescription: 'Painting #3'
   pickupPrefab: {fileID: 395682247}
   lookImage: {fileID: 0}
-  cursorUse: {fileID: 2800000, guid: 398492c08d7b85a428191c93ff5e368c, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 5ff6fb9cc4778a0448a2d221d18de2e2, type: 3}
+  cursorUse: {fileID: 2800000, guid: fdc052756c1ae824984c0655b987cf8f, type: 3}
+  cursorNormal: {fileID: 2800000, guid: 43cbdf13dea01dd4186749f75830e241, type: 3}
   useAction:
     m_PersistentCalls:
       m_Calls: []
