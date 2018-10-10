@@ -10574,7 +10574,7 @@ GameObject:
   - component: {fileID: 780558757}
   - component: {fileID: 780558759}
   - component: {fileID: 780558758}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HapImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15135,7 +15135,7 @@ GameObject:
   - component: {fileID: 1235898351}
   - component: {fileID: 1235898353}
   - component: {fileID: 1235898352}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LetterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20481,7 +20481,7 @@ GameObject:
   - component: {fileID: 1549139093}
   - component: {fileID: 1549139095}
   - component: {fileID: 1549139094}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HapText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24099,7 +24099,7 @@ GameObject:
   - component: {fileID: 1863221375}
   - component: {fileID: 1863221377}
   - component: {fileID: 1863221376}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LetterText1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25106,7 +25106,7 @@ GameObject:
   - component: {fileID: 1996017381}
   - component: {fileID: 1996017380}
   - component: {fileID: 1996017379}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LetterText2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

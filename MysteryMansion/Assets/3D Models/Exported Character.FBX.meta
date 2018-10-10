@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: 5db27762342741f499fa2df6e11baffb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: Bone001
+    100004: Bone002
+    100006: Bone003
+    100008: Bone004
+    100010: Bone006
+    100012: Bone007
+    100014: Bone008
+    100016: BoneCollarL
+    100018: BoneCollarR
+    100020: BoneElbowL
+    100022: BoneElbowR
+    100024: BoneFingerL1
+    100026: BoneFingerL2
+    100028: BoneFingerLEnd
+    100030: BoneFingerR1
+    100032: BoneFingerR2
+    100034: BoneFingerREnd
+    100036: BoneHead
+    100038: BoneNeck
+    100040: BoneShoulderL
+    100042: BoneShoulderR
+    100044: BoneSpine 2
+    100046: BoneSpine 3
+    100048: BoneSpine1
+    100050: BoneSpineEnd
+    100052: BoneThighL
+    100054: BoneWristL
+    100056: BoneWristR
+    100058: Box001
+    100060: ControlAnkleL
+    100062: ControlAnkleR
+    100064: ControlBase
+    100066: ControlCollarL
+    100068: ControlCollarR
+    100070: ControlElbowL
+    100072: ControlElbowR
+    100074: ControlFingerL
+    100076: ControlFingerR
+    100078: ControlHead
+    100080: ControlHip
+    100082: ControlIKL
+    100084: ControlIKR
+    100086: ControlKnuckleL
+    100088: ControlKnuckleR
+    100090: ControlNeck
+    100092: ControlShoulderL
+    100094: ControlShoulderR
+    100096: ControlSpine2
+    100098: ControlSpine3
+    100100: ControlWristL
+    100102: ControlWristR
+    100104: //RootNode
+    100106: Hair
+    100108: IK Chain001
+    100110: IK Chain002
+    100112: Pants
+    100114: Plane001
+    100116: Plane002
+    100118: Shirt
+    400000: Body
+    400002: Bone001
+    400004: Bone002
+    400006: Bone003
+    400008: Bone004
+    400010: Bone006
+    400012: Bone007
+    400014: Bone008
+    400016: BoneCollarL
+    400018: BoneCollarR
+    400020: BoneElbowL
+    400022: BoneElbowR
+    400024: BoneFingerL1
+    400026: BoneFingerL2
+    400028: BoneFingerLEnd
+    400030: BoneFingerR1
+    400032: BoneFingerR2
+    400034: BoneFingerREnd
+    400036: BoneHead
+    400038: BoneNeck
+    400040: BoneShoulderL
+    400042: BoneShoulderR
+    400044: BoneSpine 2
+    400046: BoneSpine 3
+    400048: BoneSpine1
+    400050: BoneSpineEnd
+    400052: BoneThighL
+    400054: BoneWristL
+    400056: BoneWristR
+    400058: Box001
+    400060: ControlAnkleL
+    400062: ControlAnkleR
+    400064: ControlBase
+    400066: ControlCollarL
+    400068: ControlCollarR
+    400070: ControlElbowL
+    400072: ControlElbowR
+    400074: ControlFingerL
+    400076: ControlFingerR
+    400078: ControlHead
+    400080: ControlHip
+    400082: ControlIKL
+    400084: ControlIKR
+    400086: ControlKnuckleL
+    400088: ControlKnuckleR
+    400090: ControlNeck
+    400092: ControlShoulderL
+    400094: ControlShoulderR
+    400096: ControlSpine2
+    400098: ControlSpine3
+    400100: ControlWristL
+    400102: ControlWristR
+    400104: //RootNode
+    400106: Hair
+    400108: IK Chain001
+    400110: IK Chain002
+    400112: Pants
+    400114: Plane001
+    400116: Plane002
+    400118: Shirt
+    2100000: 'Material #26'
+    2100002: 'Material #27'
+    2100004: No Name
+    2100006: 'Material #30'
+    2100008: 'Material #29'
+    2100010: 'Material #31'
+    2100012: 'Material #33'
+    2300000: Box001
+    2300002: Hair
+    2300004: Plane001
+    2300006: Plane002
+    3300000: Box001
+    3300002: Hair
+    3300004: Plane001
+    3300006: Plane002
+    4300000: Plane001
+    4300002: Plane002
+    4300004: Box001
+    4300006: Hair
+    4300008: Shirt
+    4300010: Body
+    4300012: Pants
+    7400000: Idle
+    9500000: //RootNode
+    13700000: Body
+    13700002: Pants
+    13700004: Shirt
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
