@@ -8967,7 +8967,6 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 06cbd2e08235c0547a3d1ac7ee67eee9, type: 3}
   - {fileID: 2800000, guid: 9ef9af9fe351f9f48abec61654b882c9, type: 3}
   - {fileID: 2800000, guid: aba1e9122f595ea40a2fb33d827060be, type: 3}
-  - {fileID: 2800000, guid: e18b15e28d14efa4aa48f8bc2648d1a5, type: 3}
   cursWalk:
   - {fileID: 2800000, guid: 454f40f6be2dc324889c81b93c998559, type: 3}
   - {fileID: 2800000, guid: e3233f68a690cdb4ab423bfd8f228315, type: 3}
