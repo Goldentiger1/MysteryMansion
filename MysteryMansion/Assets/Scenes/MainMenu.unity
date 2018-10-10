@@ -1365,9 +1365,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "CREDITS\n\nDirector, 2D/3D:\nAnna Laukkanen\n\nManager, 2D, Sound & Animation:\nLeo
-    Virolainen \n\nStory & 2D:\nJaani K\xE4\xE4p\xE4\n\nProgramming & Sound:\nOse
-    Hermunen\n\nProgramming & PR:\nAaro Leskinen"
+  m_text: "CREDITS\n\nDirector, 2D/3D:\nAnna Laukkanen\n\nManager, 2D/3D, Sound &
+    Animation:\nLeo Virolainen \n\nStory & 2D:\nJaani K\xE4\xE4p\xE4\n\nProgramming
+    & Sound:\nOse Hermunen\n\nProgramming & PR:\nAaro Leskinen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1444,11 +1444,11 @@ MonoBehaviour:
     lineCount: 16
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
