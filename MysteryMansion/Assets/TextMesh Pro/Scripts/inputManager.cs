@@ -346,7 +346,6 @@ public class inputManager : MonoBehaviour {
         Button2.SetActive(false);
         Button3.SetActive(true);
         LetterImage.SetActive(false);
-
         descBG.SetActive(false);
 
     }
