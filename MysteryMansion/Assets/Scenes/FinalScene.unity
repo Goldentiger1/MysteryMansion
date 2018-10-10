@@ -8927,7 +8927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f64111c68ae0a46925653abf808c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharAnim: {fileID: 0}
+  CharAnim: {fileID: 2064696208}
   canv: {fileID: 0}
   Button: {fileID: 0}
   Button1: {fileID: 0}
@@ -19219,7 +19219,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3267bf9e0f718844da1398da90266688, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33677f363722423419b54e78160c3bca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -25512,12 +25512,33 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400104, guid: 5db27762342741f499fa2df6e11baffb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400104, guid: 5db27762342741f499fa2df6e11baffb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400104, guid: 5db27762342741f499fa2df6e11baffb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5db27762342741f499fa2df6e11baffb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5c9549dfcb7f6e345874b5294b27385a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db27762342741f499fa2df6e11baffb, type: 3}
   m_IsPrefabAsset: 0
 --- !u!4 &2064696207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400104, guid: 5db27762342741f499fa2df6e11baffb,
+    type: 3}
+  m_PrefabInternal: {fileID: 2064696206}
+--- !u!95 &2064696208 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 5db27762342741f499fa2df6e11baffb,
     type: 3}
   m_PrefabInternal: {fileID: 2064696206}
 --- !u!1 &2068872615
