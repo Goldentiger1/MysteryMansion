@@ -40,6 +40,7 @@ public class inputManager : MonoBehaviour {
     public LayerMask intObjects;
     public LayerMask UI;
     public LayerMask teleport;
+    public LayerMask blocker;
 
     public NavMeshAgent player;
 
@@ -257,7 +258,7 @@ public class inputManager : MonoBehaviour {
                 currentstate = UIstate.Normal;
 
             }
-        } else if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground | teleport)) {
+        } else if (Physics.Raycast(ray, out hit, Mathf.Infinity, ground | teleport | blocker)) {
             player.enabled = true;
             currentstate = UIstate.Walking;
             player.destination = hit.point;

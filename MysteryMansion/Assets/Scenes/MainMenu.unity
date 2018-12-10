@@ -1803,6 +1803,51 @@ Prefab:
       propertyPath: _eventList.Array.data[14]
       value: Whoosh
       objectReference: {fileID: 0}
+    - target: {fileID: 114715690837388958, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeInTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114143650564604030, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeInTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687722839870606, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeInTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537274379699534, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeInTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114442246709577540, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeInTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114442246709577540, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeOutTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537274379699534, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeOutTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687722839870606, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeOutTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114715690837388958, guid: c171c15d29a5e59488c84ec89fa71edb,
+        type: 2}
+      propertyPath: _fadeOutTime
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c171c15d29a5e59488c84ec89fa71edb, type: 2}
   m_IsPrefabAsset: 0

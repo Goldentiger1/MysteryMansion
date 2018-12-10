@@ -931,7 +931,7 @@ MonoBehaviour:
   Guid: 
   _componentHolder: {fileID: 0}
   _onEventNotifyEventName: 
-  _audioClip: {fileID: 8300000, guid: 36ee4363f0d79224fb48e9a79b65a34d, type: 3}
+  _audioClip: {fileID: 8300000, guid: 9c57b4bcc85905e4c8f25f9fbcb9cb9d, type: 3}
   _audioClipHandle:
     _audioClipPath: 
     _useAudioClipPath: 1
