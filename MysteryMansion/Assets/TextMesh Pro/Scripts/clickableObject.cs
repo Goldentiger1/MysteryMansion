@@ -47,6 +47,7 @@ public class clickableObject : MonoBehaviour {
 
     void Start() {
         IM = GameObject.FindObjectOfType<inputManager>();
+        cursorNormal = IM.cursNormal;
     }
     //canv = GameObject.FindObjectOfType<Canvas>();
     //canv.enabled = false;
