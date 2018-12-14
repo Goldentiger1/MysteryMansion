@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorOpener : MonoBehaviour {
+public class StairsAppear : MonoBehaviour {
 
     public LayerMask Player;
 
     inputManager IM;
 
-
-	void Start () {
+    // Use this for initialization
+    void Start() {
         IM = FindObjectOfType<inputManager>();
-	}
+    }
 
     public void OnTriggerEnter(Collider other) {
         if (other.gameObject.name == "Protoplayer") {
             print("osui triggeriin");
             IM.HapAction();
-            IM.hapText.text = "Wait a minute.. That door on the right, wasn't it closed earlier?";
+            IM.hapText.text = "Would you look at that, the slide has turned into a set of stairs!";
         }
     }
 
