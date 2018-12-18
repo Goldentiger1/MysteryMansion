@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8da170210324b64992b88301454a697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FinalOpen: {fileID: 21300000, guid: 7277080cdadd1b940bfbeaeae5095c83, type: 3}
+  FinalOpen: {fileID: 21300000, guid: 166552cd89158ed42b8a4d3303ffd9e6, type: 3}
   boardsDestroyed: 0
   lockOpened: 0
   FinalTeleport: {fileID: 793224581}
@@ -987,7 +987,7 @@ MonoBehaviour:
   Pianokey: {fileID: 591766481}
   FireplaceCollider: {fileID: 1662426139}
   FireClose: {fileID: 0}
-  FireOpen: {fileID: 21300000, guid: 7dd75c4233b1e7f41ad0a6588165654c, type: 3}
+  FireOpen: {fileID: 21300000, guid: 09ad2d423696d3e4391d774a5e348ebb, type: 3}
 --- !u!114 &92638832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,7 +1157,7 @@ MonoBehaviour:
           m_MethodName: set_sprite
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 21300000, guid: ddc6e2a89bbc8d94f82a32365bb08e44,
+            m_ObjectArgument: {fileID: 21300000, guid: 2df0dc1e957500342a0f8de19d21374d,
               type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
             m_IntArgument: 0
@@ -14281,7 +14281,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cde4ba22f98ad9742b1db3111b90d64c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0bbcfca0a7556b47ad0bc785c43662d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -21184,7 +21184,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 65998392b45b41b4fa5a7308740dc5db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bfa4ac6e83e78547beeb274afcbf8dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

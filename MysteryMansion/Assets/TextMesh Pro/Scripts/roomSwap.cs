@@ -35,7 +35,7 @@ public class roomSwap : MonoBehaviour {
         rooms = 1 << LayerMask.NameToLayer("Rooms");
         var r = Physics.OverlapSphere(transform.position, 1f, rooms);
         room = r[0].GetComponent<RoomData>();
-        
+
     }
 
     // Use this for initialization
@@ -58,17 +58,21 @@ public class roomSwap : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.layer == LayerMask.NameToLayer("Player")) {
+            if (destination == null) {
+                return;
+            } else {
                 playerNav.Warp(destination.position);
-            room.ExitRoom();
-            var r = Physics.OverlapSphere(destination.position, 1f, rooms);
-            r[0].GetComponent<RoomData>().EnterRoom();
-            //mainCam.enabled = false;
-            //bgCam.enabled = false;
-            //nextMainCam.enabled = true;
-            //nextBgCam.enabled = true;
-            //var camOff = Scene.FindObjectOfType<Camera>().enabled = false;
+                room.ExitRoom();
+                var r = Physics.OverlapSphere(destination.position, 1f, rooms);
+                r[0].GetComponent<RoomData>().EnterRoom();
+                //mainCam.enabled = false;
+                //bgCam.enabled = false;
+                //nextMainCam.enabled = true;
+                //nextBgCam.enabled = true;
+                //var camOff = Scene.FindObjectOfType<Camera>().enabled = false;
             }
         }
     }
+}
 
 
