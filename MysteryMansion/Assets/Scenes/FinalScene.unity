@@ -27724,7 +27724,7 @@ MonoBehaviour:
   useActionAvailable: 0
   takeActionAvailable: 0
   lookActionAvailable: 0
-  objDescription: Oh no. Looks like someone's going to have seven years of bd luck!
+  objDescription: Oh no. Looks like someone's going to have seven years of bad luck!
   pickupPrefab: {fileID: 0}
   lookImage: {fileID: 0}
   cursorNormal: {fileID: 2800000, guid: 843992306dbada74288c4e94b844c9c8, type: 3}
