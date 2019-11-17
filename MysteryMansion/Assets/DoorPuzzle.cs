@@ -28,8 +28,8 @@ public class DoorPuzzle : MonoBehaviour {
             boardsDestroyed = false;
             Destroy(GameObject.Find("DoorPuzzler"));
             FinalTeleport.SetActive(true);
-            Fabric.EventManager.Instance.PostEvent("Pause");
-            Fabric.EventManager.Instance.PostEvent("Whoosh");
+            //Fabric.EventManager.Instance.PostEvent("Pause");
+            //Fabric.EventManager.Instance.PostEvent("Whoosh");
             GameObject.FindGameObjectWithTag("LastDoor").gameObject.GetComponent<SpriteRenderer>().sprite = FinalOpen;
 
         }

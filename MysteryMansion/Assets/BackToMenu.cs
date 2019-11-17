@@ -9,7 +9,7 @@ public class BackToMenu : MonoBehaviour {
 
     void Update() {
         if(timeWait <= 0) {
-            Fabric.EventManager.Instance.PostEvent("Stop");
+            //Fabric.EventManager.Instance.PostEvent("Stop");
             SceneManager.LoadScene("MainMenu");
         } else {
             timeWait -= Time.deltaTime;

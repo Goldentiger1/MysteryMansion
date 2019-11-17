@@ -21,7 +21,7 @@ public class inventoryItem : MonoBehaviour {
 	}
 	
     public void LibDoor() {
-    Fabric.EventManager.Instance.PostEvent("Door");
+    //Fabric.EventManager.Instance.PostEvent("Door");
     }
 
     // Update is called once per frame

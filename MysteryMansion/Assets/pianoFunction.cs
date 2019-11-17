@@ -18,16 +18,16 @@ public class pianoFunction : MonoBehaviour {
     public void PianoRegi() {
         IM.HapAction();
         if (PianoReg) {
-            Fabric.EventManager.Instance.PostEvent("Piano1");
-            Fabric.EventManager.Instance.PostEvent("Pause");
+            //Fabric.EventManager.Instance.PostEvent("Piano1");
+            //Fabric.EventManager.Instance.PostEvent("Pause");
             IM.hapText.text = "The music doesn't sound right, it's missing something.";
         } else if (PianoCard1) {
-            Fabric.EventManager.Instance.PostEvent("Pause");
-            Fabric.EventManager.Instance.PostEvent("Piano2");
+            //Fabric.EventManager.Instance.PostEvent("Pause");
+            //Fabric.EventManager.Instance.PostEvent("Piano2");
             IM.hapText.text = "The music still doesn't sound quite right, the note's a little off.";
         } else if (PianoCard2) {
-            Fabric.EventManager.Instance.PostEvent("Pause");
-            Fabric.EventManager.Instance.PostEvent("Piano3");
+            //Fabric.EventManager.Instance.PostEvent("Pause");
+            //Fabric.EventManager.Instance.PostEvent("Piano3");
             IM.hapText.text = "The piano sounds in tune with the music box, and the fireplace has opened";
             FireplaceCollider.enabled = false;
             Pianokey.SetActive(true);
@@ -38,8 +38,8 @@ public class pianoFunction : MonoBehaviour {
     }
 
     public void MusicBox1() {
-        Fabric.EventManager.Instance.PostEvent("Pause");
-        Fabric.EventManager.Instance.PostEvent("Musicbox");
+        //Fabric.EventManager.Instance.PostEvent("Pause");
+        //Fabric.EventManager.Instance.PostEvent("Musicbox");
     }
 
     public void MusicCard1() {

@@ -81,8 +81,8 @@ public class PaintingPuzzle : MonoBehaviour {
         if (!solv && solved) {
             solv = true;
             puzzleComplete.Invoke();
-            Fabric.EventManager.Instance.PostEvent("Pause");
-            Fabric.EventManager.Instance.PostEvent("Creak");
+            //Fabric.EventManager.Instance.PostEvent("Pause");
+            //Fabric.EventManager.Instance.PostEvent("Creak");
             IM.HapAction();
             IM.hapText.text = "I heard a click and some rumbling coming from the lobby!";
         }

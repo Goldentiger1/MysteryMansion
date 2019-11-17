@@ -136,7 +136,7 @@ public class inputManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        Fabric.EventManager.Instance.PostEvent("MainMusic");
+        //Fabric.EventManager.Instance.PostEvent("MainMusic");
         Cursor.SetCursor(cursNormal, hotSpot, cursorMode);
         dragIcon = transform.FindDeepChild("InvItemImage").gameObject;
         InventoryButton = transform.FindDeepChild("InventoryButton").gameObject;
@@ -238,8 +238,8 @@ public class inputManager : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, intObjects)) {
             var co = hit.transform.GetComponent<clickableObject>();
-            Fabric.EventManager.Instance.PostEvent("StopPiano");
-            Fabric.EventManager.Instance.PostEvent("Unpause");
+            //Fabric.EventManager.Instance.PostEvent("StopPiano");
+            //Fabric.EventManager.Instance.PostEvent("Unpause");
             //print("Osui");
             if (co) {
                 player.enabled = false;
@@ -262,8 +262,8 @@ public class inputManager : MonoBehaviour {
             player.enabled = true;
             currentstate = UIstate.Walking;
             player.destination = hit.point;
-            Fabric.EventManager.Instance.PostEvent("StopPiano");
-            Fabric.EventManager.Instance.PostEvent("Unpause");
+            //Fabric.EventManager.Instance.PostEvent("StopPiano");
+            //Fabric.EventManager.Instance.PostEvent("Unpause");
             //currentstate = UIstate.Normal;
             UIelements.SetActive(false);
             InventoryElements.SetActive(false);
@@ -314,7 +314,7 @@ public class inputManager : MonoBehaviour {
 
     public void InventoryAction() {
         InventoryElements.SetActive(!InventoryElements.activeSelf);
-        Fabric.EventManager.Instance.PostEvent("Invopen");
+        //Fabric.EventManager.Instance.PostEvent("Invopen");
         UIelements.SetActive(false);
         UseText.text = "";
         if (!InventoryElements.activeSelf) {

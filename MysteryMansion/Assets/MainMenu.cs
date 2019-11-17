@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour {
 
     private void Start() {
-        Fabric.EventManager.Instance.PostEvent("MainMenu");
+        //Fabric.EventManager.Instance.PostEvent("MainMenu");
     }
 
     void Update() {
@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Fabric.EventManager.Instance.PostEvent("Stop");
+        //Fabric.EventManager.Instance.PostEvent("Stop");
     }
 
     public void QuitGame() {
